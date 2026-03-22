@@ -5,14 +5,14 @@ import { useEffect, useRef } from 'react'
 export default function NeuralBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  useEffect(() => {
+useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
 
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    // Set canvas size
+    // Ajustement de la taille du canvas
     const resize = () => {
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
@@ -20,7 +20,7 @@ export default function NeuralBackground() {
     resize()
     window.addEventListener('resize', resize)
 
-    // Particle system
+    // Système de particules avec typage strict
     class Particle {
       x: number
       y: number
@@ -28,53 +28,55 @@ export default function NeuralBackground() {
       vy: number
       radius: number
 
-      constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
+      constructor(width: number, height: number) {
+        this.x = Math.random() * width
+        this.y = Math.random() * height
         this.vx = (Math.random() - 0.5) * 0.3
         this.vy = (Math.random() - 0.5) * 0.3
         this.radius = Math.random() * 2 + 1
       }
 
-      update() {
+      update(width: number, height: number) {
         this.x += this.vx
         this.y += this.vy
 
-        if (this.x < 0 || this.x > canvas.width) this.vx *= -1
-        if (this.y < 0 || this.y > canvas.height) this.vy *= -1
+        // Rebond sur les bords
+        if (this.x < 0 || this.x > width) this.vx *= -1
+        if (this.y < 0 || this.y > height) this.vy *= -1
       }
 
-      draw() {
-        if (!ctx) return
-        ctx.beginPath()
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
-        ctx.fillStyle = 'rgba(6, 182, 212, 0.4)'
-        ctx.fill()
+      draw(context: CanvasRenderingContext2D) {
+        context.beginPath()
+        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+        context.fillStyle = 'rgba(6, 182, 212, 0.4)'
+        context.fill()
       }
     }
 
-    // Create particles
+    // Initialisation
     const particles: Particle[] = []
     const particleCount = Math.min(50, Math.floor(window.innerWidth / 30))
 
     for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle())
+      particles.push(new Particle(canvas.width, canvas.height))
     }
 
-    // Animation loop
+    // Boucle d'animation
+    let animationFrameId: number
+
     const animate = () => {
       ctx.fillStyle = 'rgba(2, 2, 3, 0.05)'
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      // Update and draw particles
       particles.forEach(particle => {
-        particle.update()
-        particle.draw()
+        particle.update(canvas.width, canvas.height)
+        particle.draw(ctx)
       })
 
-      // Draw connections
+      // Dessin des connections
       particles.forEach((p1, i) => {
-        particles.slice(i + 1).forEach(p2 => {
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j]
           const dx = p1.x - p2.x
           const dy = p1.y - p2.y
           const distance = Math.sqrt(dx * dx + dy * dy)
@@ -88,16 +90,18 @@ export default function NeuralBackground() {
             ctx.lineWidth = 1
             ctx.stroke()
           }
-        })
+        }
       })
 
-      requestAnimationFrame(animate)
+      animationFrameId = requestAnimationFrame(animate)
     }
 
     animate()
 
+    // Nettoyage pour éviter les fuites de mémoire
     return () => {
       window.removeEventListener('resize', resize)
+      cancelAnimationFrame(animationFrameId)
     }
   }, [])
 

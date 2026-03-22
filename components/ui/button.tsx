@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Slot } from "@radix-ui/react-slot" // Import important
 import { cn } from "@/lib/utils"
 
 export interface ButtonProps
@@ -10,7 +11,9 @@ export interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'default', size = 'default', asChild = false, ...props }, ref) => {
-    const Comp = asChild ? 'div' : 'button'
+    // Utilise le composant Slot (Majuscule) et non la chaîne 'slot'
+    const Comp = asChild ? Slot : "button"
+    
     return (
       <Comp
         className={cn(
@@ -23,7 +26,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           size === 'lg' && "h-11 px-8",
           className
         )}
-        ref={ref}
+        ref={ref} 
         {...props}
       />
     )
