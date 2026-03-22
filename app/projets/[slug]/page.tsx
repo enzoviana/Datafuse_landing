@@ -139,9 +139,9 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           {/* Metadata floating on image */}
           <div className="absolute bottom-10 left-10 p-8 rounded-3xl bg-black/60 backdrop-blur-3xl border border-white/10 hidden lg:block">
              <div className="grid grid-cols-1 gap-6">
-                <MetaItem icon={<User size={16}/>} label="Client" value={project.client} />
-                <MetaItem icon={<Clock size={16}/>} label="Durée" value={project.duration} />
-                <MetaItem icon={<Calendar size={16}/>} label="Année" value={project.year} />
+                <MetaItem icon={<User size={16}/>} label="Client" value={project.client ?? "Non spécifié"} />
+                <MetaItem icon={<Clock size={16}/>} label="Durée" value={project.duration ?? "N/A"} />
+                <MetaItem icon={<Calendar size={16}/>} label="Année" value={project.year ?? "2026"} />
              </div>
           </div>
         </motion.div>
