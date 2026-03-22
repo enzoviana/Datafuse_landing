@@ -1,0 +1,325 @@
+{
+  "navbar": {
+    "expertise": "Expertise",
+    "builds": "Réalisations",
+    "projects": "Projets",
+    "process": "Processus",
+    "login": "Connexion_",
+    "cta": "Prendre contact"
+  },
+  "hero": {
+    "badge": "Disponible pour les projets Q2 2026",
+    "title": "THE DIGITAL",
+    "subtitle": "FORGE.",
+    "productionReady": "Production Ready",
+    "description": "Nous ne créons pas de simples sites. Nous forgeons des <strong>architectures scalables</strong> et des interfaces <strong>haute-performance</strong>.",
+    "ctaPrimary": "Initialiser un projet",
+    "ctaSecondary": "Consulter le Manifeste",
+    "partnersTitle": "Conçu pour les équipes de classe mondiale",
+    "systemOk": "SYSTÈME: OK",
+    "uptime": "Disponibilité: 99.9%",
+    "version": "v2.0.46_studio"
+  },
+  "features": {
+    "badge": "Capacités d'ingénierie",
+    "title": "L'excellence à chaque",
+    "subtitle": "ligne de code.",
+    "description": "Nous ne livrons pas seulement du code, nous bâtissons votre avantage technologique.",
+    "services": {
+      "saas": {
+        "title": "SaaS Architecture",
+        "desc": "Systèmes multi-tenant scalables. Nous bâtissons des infrastructures cloud-native pour des millions d'utilisateurs.",
+        "stack": ["Next.js", "PostgreSQL", "AWS"]
+      },
+      "speed": {
+        "title": "Web Speed",
+        "desc": "Performances extrêmes & SEO.",
+        "stack": ["Vercel", "Turborepo"]
+      },
+      "mobile": {
+        "title": "Mobile Foundry",
+        "desc": "iOS & Android sans compromis.",
+        "stack": ["React Native", "Expo"]
+      },
+      "brand": {
+        "title": "Premium Digital Brand",
+        "desc": "Expériences web immersives. Design de haute précision avec un focus total sur la conversion et les Core Web Vitals.",
+        "stack": ["Tailwind", "Framer", "GSAP"]
+      }
+    }
+  },
+  "portfolio": {
+    "badge": "Travaux sélectionnés",
+    "title": "Derniers",
+    "subtitle": "Builds.",
+    "description": "De la conception à la mise à l'échelle, découvrez comment nous propulsons nos partenaires.",
+    "projects": {
+      "nexus": {
+        "title": "Nexus Analytics",
+        "badge": "SaaS / Web",
+        "desc": "Plateforme SaaS de Business Intelligence capable de traiter 10M+ d'événements par seconde.",
+        "tags": ["Next.js", "Go", "Clickhouse", "AWS"]
+      },
+      "luxe": {
+        "title": "Luxe Mobile",
+        "badge": "Mobile",
+        "desc": "Expérience shopping haute-couture pour une marque de luxe parisienne.",
+        "tags": ["React Native", "Expo", "GSAP"]
+      },
+      "vault": {
+        "title": "SafeVault",
+        "badge": "Fintech",
+        "desc": "Infrastructure bancaire sécurisée avec chiffrement de bout en bout.",
+        "tags": ["Rust", "TypeScript", "PostgreSQL"]
+      },
+      "etheria": {
+        "title": "Etheria Dashboard",
+        "badge": "Infrastructure",
+        "desc": "Interface de contrôle temps réel pour une ferme de serveurs GPU décentralisée.",
+        "tags": ["WebSockets", "D3.js", "Redis"]
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Stratégie tarifaire v2.0",
+    "title": "Investissez dans",
+    "subtitle": "l'excellence.",
+    "description": "Transparence totale. Pas de coûts cachés. Juste de l'ingénierie de haut vol.",
+    "plans": {
+      "starter": {
+        "name": "Starter_Build",
+        "info": "Architecture MVP optimisée pour un Time-to-Market agressif.",
+        "price": "2.5k",
+        "features": [
+          "Next.js 14+ (App Router)",
+          "Design UI Atomique",
+          "SEO / Core Web Vitals Audit",
+          "Edge Infrastructure Setup",
+          "Support L1 (30 jours)"
+        ],
+        "btn": "Initialiser_MVP"
+      },
+      "scale": {
+        "name": "Scale_Architect",
+        "info": "Solutions SaaS robustes avec infrastructures haute disponibilité.",
+        "price": "8.5k",
+        "features": [
+          "Dashboard & Data Viz",
+          "RBAC / Auth Sécurisée",
+          "API Performance Tuning",
+          "CI/CD Pipeline (GitHub Actions)",
+          "Maintenance Proactive 6m",
+          "Dedicated Architect Support"
+        ],
+        "btn": "Déployer_Scale",
+        "mostSelected": "Plus_choisi"
+      },
+      "custom": {
+        "name": "Custom_Engine",
+        "info": "Infrastructures complexes et écosystèmes multi-plateformes.",
+        "price": "Sur mesure",
+        "features": [
+          "Micro-services architecture",
+          "Native iOS & Android builds",
+          "Sécurité SOC2 Compliant",
+          "Multi-cloud Strategy",
+          "SLA Garanti (99.9%)",
+          "Engineering Team On-call"
+        ],
+        "btn": "Demander_devis"
+      }
+    },
+    "baseRate": "Tarif_de_base",
+    "guarantee": {
+      "title": "Garantie Studio Datafuse",
+      "desc": "Chaque ligne de code est soumise à un audit interne. Tous les builds sont livrés avec une documentation technique complète et une garantie de maintenance adaptative."
+    }
+  },
+  "testimonials": {
+    "badge": "Approuvé par les leaders",
+    "title": "Validation de",
+    "subtitle": "l'industrie.",
+    "items": [
+      {
+        "text": "DataFuse Studio a transformé notre vision en une plateforme SaaS exceptionnelle. Leur expertise sur Next.js et AWS est sans égale.",
+        "name": "Sophie Martin",
+        "role": "CEO, TechStart"
+      },
+      {
+        "text": "Une équipe qui comprend les enjeux business. Notre plateforme a supporté une charge de +300% dès le premier mois sans aucune latence.",
+        "name": "Marc Dubois",
+        "role": "Fondateur, LuxShop"
+      },
+      {
+        "text": "Architecture technique solide, code propre et scalable. DataFuse comprend parfaitement les exigences de sécurité d'une startup fintech.",
+        "name": "Emma Rousseau",
+        "role": "CTO, AI Analytics"
+      },
+      {
+        "text": "Leur approche du développement mobile avec React Native nous a permis de diviser nos coûts de maintenance par deux.",
+        "name": "Laura Chen",
+        "role": "Product Manager"
+      },
+      {
+        "text": "Design élégant et performances au top. Les Core Web Vitals sont dans le vert sur toutes nos pages, un vrai atout SEO.",
+        "name": "Thomas Bernard",
+        "role": "Directeur Marketing"
+      },
+      {
+        "text": "Un accompagnement irréprochable du MVP à la mise à l'échelle. Communication transparente et livraison dans les temps.",
+        "name": "Alexandre Petit",
+        "role": "Entrepreneur"
+      }
+    ],
+    "stats": {
+      "rating": "Note Client",
+      "projects": "Projets livrés"
+    }
+  },
+  "faq": {
+    "badge": "Base de connaissances",
+    "title": "Questions",
+    "subtitle": "techniques.",
+    "questions": [
+      {
+        "category": "Délais",
+        "title": "Quels sont les délais de réalisation d'un projet ?",
+        "content": "La durée dépend de la complexité technique. Un MVP agile prend généralement 4-6 semaines, tandis qu'un écosystème SaaS complet nécessite 3-5 mois. Nous travaillons en cycles itératifs (Sprints) avec des livraisons bi-mensuelles."
+      },
+      {
+        "category": "Ops",
+        "title": "Proposez-vous de la maintenance après livraison ?",
+        "content": "Nous incluons systématiquement 3 mois de maintenance corrective. Au-delà, nos contrats de Tier-Support garantissent la mise à jour des dépendances, le monitoring de l'infrastructure et des évolutions proactives."
+      },
+      {
+        "category": "Légal",
+        "title": "Livrez-vous le code source ?",
+        "content": "Absolument. Vous détenez la propriété intellectuelle totale. À la livraison, nous effectuons un transfert complet des repositories GitHub/GitLab, de la documentation technique et des secrets d'infrastructure."
+      },
+      {
+        "category": "Stack",
+        "title": "Quelles technologies utilisez-vous ?",
+        "content": "Nous sommes spécialisés dans la stack TypeScript moderne : Next.js, Node.js, et PostgreSQL. Pour le mobile, nous privilégions React Native. Nos infrastructures sont déployées via Terraform sur AWS ou Vercel."
+      },
+      {
+        "category": "Qualité",
+        "title": "Comment garantissez-vous la qualité du code ?",
+        "content": "Chaque ligne de code passe par une Code Review. Nous imposons un taux de couverture de tests unitaires élevé et utilisons des outils d'analyse statique pour garantir la maintenabilité à long terme."
+      }
+    ],
+    "cta": {
+      "title": "Encore des questions ?",
+      "desc": "Discutons de votre architecture technique.",
+      "btn": "Parler à un ingénieur"
+    }
+  },
+  "timeline": {
+    "badge": "Cycle de vie du projet",
+    "title": "L'ingénierie",
+    "subtitle": "du succès.",
+    "phases": [
+      {
+        "tagline": "PHASE_ANALYSE",
+        "title": "Discovery & Architecture",
+        "description": "Audit des infrastructures existantes et modélisation de la base de données. On ne code pas avant d'avoir une roadmap technique sans faille.",
+        "tags": ["UML_SCHEMA", "STACK_REFINEMENT"]
+      },
+      {
+        "tagline": "UX_ENGINEERING",
+        "title": "High-Perf Design",
+        "description": "Création d'un Design System atomique. Focus sur la vitesse de chargement perçue et les micro-interactions fluides."
+      },
+      {
+        "tagline": "BUILD_EXECUTION",
+        "title": "Core Development",
+        "description": "Développement itératif avec CI/CD automatisé."
+      },
+      {
+        "tagline": "STABLE_RELEASE",
+        "title": "Launch & Monitoring",
+        "uptime": "DISPONIBILITÉ"
+      }
+    ]
+  },
+  "logoCloud": {
+    "badge": "Stack de premier plan",
+    "title": "Propulsé par les standards de l'industrie.",
+    "description": "Architecture scalable . Déploiement Edge . Sécurité Enterprise"
+  },
+  "contact": {
+    "badge": "Démarrer un projet",
+    "title": "Parlons de votre",
+    "subtitle": "prochain build.",
+    "hq": "Datafuse Studio HQ",
+    "emailLabel": "Email Direct",
+    "locationLabel": "Localisation",
+    "location": "Paris, France — Global Remote",
+    "availableTitle": "Studio Disponible",
+    "availableDesc": "Nous acceptons actuellement 2 nouveaux projets pour le <strong>Q2 2026</strong>. Réponse garantie sous 24h.",
+    "benefits": [
+      "Audit technique offert",
+      "Accompagnement CTO",
+      "Contrat IP 100%"
+    ],
+    "form": {
+      "fullName": "Nom Complet",
+      "fullNamePlaceholder": "Jean Dupont",
+      "email": "Email Business",
+      "emailPlaceholder": "jean@entreprise.com",
+      "serviceType": "Type de Service",
+      "serviceOptions": [
+        "SaaS / App Web",
+        "Mobile App",
+        "Audit & Strategy"
+      ],
+      "budget": "Budget",
+      "budgetOptions": [
+        "10k€ - 25k€",
+        "25k€ - 50k€",
+        "50k€ +"
+      ],
+      "projectBrief": "Brief du Projet",
+      "projectBriefPlaceholder": "Décrivez vos objectifs et défis techniques...",
+      "submit": "Initialiser la discussion",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Erreur lors de l'envoi. Réessayez."
+    }
+  },
+  "footer": {
+    "description": "Studio d'ingénierie digitale spécialisé dans le build de solutions scalables à haute performance. Nous transformons la complexité technique en avantage compétitif.",
+    "sections": {
+      "services": {
+        "title": "Services",
+        "links": [
+          { "name": "SaaS Architecture", "href": "#processus" },
+          { "name": "Web Engineering", "href": "#processus" },
+          { "name": "Mobile Systems", "href": "#processus" },
+          { "name": "Cloud Infrastructure", "href": "#processus" }
+        ]
+      },
+      "studio": {
+        "title": "Studio",
+        "links": [
+          { "name": "Notre Stack", "href": "#tech" },
+          { "name": "Processus", "href": "#processus" },
+          { "name": "Témoignages", "href": "#testimonials" },
+          { "name": "Tarifs", "href": "#tarifs" }
+        ]
+      },
+      "legal": {
+        "title": "Légal",
+        "links": [
+          { "name": "Mentions légales", "href": "/mentions-legales" },
+          { "name": "Politique de confidentialité", "href": "/politique-confidentialite" },
+          { "name": "Cookies", "href": "/politique-cookies" },
+          { "name": "CGV", "href": "/cgv" },
+          { "name": "CGU", "href": "/cgu" }
+        ]
+      }
+    },
+    "copyright": "© 2026 Datafuse Engineering Group",
+    "location": "FRANCE / REMOTE",
+    "scrollTop": "SYSTEM.SCROLL_TOP()"
+  }
+}
