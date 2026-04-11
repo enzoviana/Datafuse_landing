@@ -42,7 +42,7 @@ export default function Navbar() {
               <Terminal size={18} />
             </div>
             <span className="text-sm font-bold tracking-[0.2em] text-white uppercase">
-              Datafuse<span className="text-blue-500">.</span>
+              Datafuse<span className="text-blue-500">.FR</span>
             </span>
           </a>
 
