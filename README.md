@@ -36,7 +36,7 @@ npm run build
 npm start
 ```
 
-Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
+Le site sera accessible sur [https://datafuseweb-95a5588f8542.herokuapp.com](https://datafuseweb-95a5588f8542.herokuapp.com)
 
 ## 📁 Structure du Projet
 

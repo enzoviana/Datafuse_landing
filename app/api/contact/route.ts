@@ -14,10 +14,10 @@ export async function POST(request: Request) {
     }
 
     // Envoyer au backend qui gèrera la création du prospect et l'envoi de l'email
-    const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api'
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://datafuseweb-95a5588f8542.herokuapp.com'
     console.log('🔗 Backend URL:', backendUrl)
 
-    const response = await fetch(`${backendUrl}/public/website-contact`, {
+    const response = await fetch(`${backendUrl}/api/public/website-contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

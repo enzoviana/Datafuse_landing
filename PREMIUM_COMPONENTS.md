@@ -89,7 +89,7 @@ npm install
 npm run dev
 ```
 
-Ouvrez http://localhost:3000 pour voir votre landing page avec les composants premium de 21st.dev !
+Ouvrez https://datafuseweb-95a5588f8542.herokuapp.com pour voir votre landing page avec les composants premium de 21st.dev !
 
 ---
 

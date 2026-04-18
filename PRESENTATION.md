@@ -166,7 +166,7 @@ npm install
 npm run dev
 
 # 3️⃣ Ouverture
-# → http://localhost:3000
+# → https://datafuseweb-95a5588f8542.herokuapp.com
 ```
 
 **C'est tout ! Votre site est en ligne localement. 🎉**

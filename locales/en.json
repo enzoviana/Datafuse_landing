@@ -1,310 +1,337 @@
 {
   "navbar": {
-    "expertise": "Expertise",
+    "expertise": "App Expertise",
     "builds": "Builds",
-    "projects": "Projects",
-    "process": "Process",
-    "login": "Login_",
-    "cta": "Get in touch"
+    "projects": "Case Studies",
+    "process": "Methodology",
+    "login": "Client Portal",
+    "cta": "Free Quote"
   },
   "hero": {
-    "badge": "Available for Q2 2026 Projects",
-    "title": "THE DIGITAL",
-    "subtitle": "FORGE.",
-    "productionReady": "Production Ready",
-    "description": "We don't create simple websites. We forge <strong>scalable architectures</strong> and <strong>high-performance</strong> interfaces.",
-    "ctaPrimary": "Initialize a project",
-    "ctaSecondary": "Read the Manifesto",
-    "partnersTitle": "Engineered for world-class teams",
-    "systemOk": "SYSTEM: OK",
+    "badge": "Web & Mobile Development Agency",
+    "title": "Engineering",
+    "subtitle": "Web, Mobile & SaaS",
+    "productionReady": "High-performance software solutions",
+    "description": "We design business applications, SaaS platforms, and complex websites with scalable and secure architecture.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "Our expertise",
+    "partnersTitle": "Trusted by industry leaders for their digital transformation",
+    "systemOk": "INFRASTRUCTURE: STABLE",
     "uptime": "Uptime: 99.9%",
-    "version": "v2.0.46_studio"
+    "version": "v2026.SEO.PRO"
   },
   "features": {
-    "badge": "Engineering Capabilities",
+    "badge": "Software Engineering",
     "title": "Excellence in every",
     "subtitle": "line of code.",
-    "description": "We don't just deliver code, we build your technological advantage.",
+    "description": "More than just a web agency, we are your technology partner for creating profitable and scalable digital solutions.",
     "services": {
       "saas": {
-        "title": "SaaS Architecture",
-        "desc": "Scalable multi-tenant systems. We build cloud-native infrastructures for millions of users.",
-        "stack": ["Next.js", "PostgreSQL", "AWS"]
+        "title": "SaaS & Cloud Development",
+        "desc": "Creation of multi-tenant SaaS software. Cloud-native architecture designed for high-scale growth and service monetization.",
+        "stack": ["Next.js", "PostgreSQL", "AWS/Vercel"]
       },
       "speed": {
-        "title": "Web Speed",
-        "desc": "Extreme performance & SEO.",
-        "stack": ["Vercel", "Turborepo"]
+        "title": "Business & Web Apps",
+        "desc": "Process digitalization. Development of ultra-fast internal tools (ERP, CRM) optimized for Core Web Vitals.",
+        "stack": ["Vercel", "Turborepo", "Node.js"]
       },
       "mobile": {
-        "title": "Mobile Foundry",
-        "desc": "iOS & Android without compromise.",
-        "stack": ["React Native", "Expo"]
+        "title": "iOS & Android Mobile Apps",
+        "desc": "Development of hybrid and native mobile applications with zero compromise on fluidity. One codebase for all stores.",
+        "stack": ["React Native", "Expo", "Fastlane"]
       },
       "brand": {
         "title": "Premium Digital Brand",
-        "desc": "Immersive web experiences. High-precision design with total focus on conversion and Core Web Vitals.",
+        "desc": "Immersive web experiences and high-end vitrine sites. Precision design focused on conversion and brand image.",
         "stack": ["Tailwind", "Framer", "GSAP"]
       }
     }
   },
   "portfolio": {
-    "badge": "Selected Works",
+    "badge": "Digital Engineering Portfolio",
     "title": "Latest",
-    "subtitle": "Builds.",
-    "description": "From design to scale, discover how we propel our partners.",
+    "subtitle": "Software Builds.",
+    "description": "From concept to launch, discover how we propel our partners with tailor-made and scalable architectures.",
     "projects": {
-      "nexus": {
-        "title": "Nexus Analytics",
-        "badge": "SaaS / Web",
-        "desc": "Business Intelligence SaaS platform capable of processing 10M+ events per second.",
-        "tags": ["Next.js", "Go", "Clickhouse", "AWS"]
+      "medialink": {
+        "title": "Media_Link_SAAS",
+        "badge": "SaaS / Multi-Tenant",
+        "desc": "Complete queue management ecosystem. SuperAdmin, point-of-sale management, display screens, and Kiosk terminals customizable via a dedicated CMS.",
+        "tags": ["SaaS", "CMS", "Web App", "Kiosk System"]
       },
-      "luxe": {
-        "title": "Luxe Mobile",
-        "badge": "Mobile",
-        "desc": "High-end shopping experience for a Parisian luxury brand.",
-        "tags": ["React Native", "Expo", "GSAP"]
+      "dimotec": {
+        "title": "Dimotec Platform",
+        "badge": "Business App / LegalTech",
+        "desc": "Connecting platform for real estate diagnosticians. Quote management, integrated electronic signature, and automated mission order tracking.",
+        "tags": ["Workflow", "E-Signature", "CRM", "Node.js"]
       },
-      "vault": {
-        "title": "SafeVault",
-        "badge": "Fintech",
-        "desc": "Secure banking infrastructure with end-to-end encryption.",
-        "tags": ["Rust", "TypeScript", "PostgreSQL"]
+      "rioave": {
+        "title": "Rio Ave FC Official",
+        "badge": "Mobile App / Sport",
+        "desc": "Official mobile application for Rio Ave football club. Real-time statistics, match tracking, and fan engagement (iOS & Android).",
+        "tags": ["React Native", "Real-time Data", "Rest API", "Mobile"]
       },
-      "etheria": {
-        "title": "Etheria Dashboard",
-        "badge": "Infrastructure",
-        "desc": "Real-time control interface for a decentralized GPU server farm.",
-        "tags": ["WebSockets", "D3.js", "Redis"]
+      "natureletjoli": {
+        "title": "Naturel & Joli",
+        "badge": "Web / Business Tool",
+        "desc": "E-business platform for beauty institutes. Online booking, complex calendar management, customer tracking, and local SEO optimization.",
+        "tags": ["Booking System", "SEO", "UX Design", "Next.js"]
       }
     }
   },
   "pricing": {
-    "badge": "Pricing Strategy v2.0",
+    "badge": "App Development Rates",
     "title": "Invest in",
-    "subtitle": "excellence.",
-    "description": "Total transparency. No hidden costs. Just high-level engineering.",
+    "subtitle": "digital excellence.",
+    "description": "Total transparency. Custom quotes for complex applications. All prices exclude VAT.",
     "plans": {
       "starter": {
-        "name": "Starter_Build",
-        "info": "Optimized MVP architecture for aggressive Time-to-Market.",
+        "name": "Corporate Website",
+        "info": "High-end professional vitrine site to boost your local visibility.",
         "price": "2.5k",
         "features": [
-          "Next.js 14+ (App Router)",
-          "Atomic UI Design",
-          "SEO / Core Web Vitals Audit",
-          "Edge Infrastructure Setup",
-          "L1 Support (30 days)"
+          "Unique & responsive vitrine site",
+          "SEO Optimization (Google)",
+          "Ultra-fast performance",
+          "Content management training",
+          "30-day technical support",
+          "Optional Premium hosting"
         ],
-        "btn": "Initialize_MVP"
+        "btn": "Request a quote"
       },
       "scale": {
-        "name": "Scale_Architect",
-        "info": "Robust SaaS solutions with high-availability infrastructures.",
-        "price": "8.5k",
+        "name": "Startup Express MVP",
+        "info": "Validate your SaaS idea in 15 days with a production-ready application.",
+        "price": "5k",
         "features": [
-          "Dashboard & Data Viz",
-          "RBAC / Secure Auth",
-          "API Performance Tuning",
-          "CI/CD Pipeline (GitHub Actions)",
-          "Proactive Maintenance 6m",
-          "Dedicated Architect Support"
+          "Functional SaaS application",
+          "Payment system (Stripe)",
+          "Admin Dashboard",
+          "Managed database",
+          "Secure testing & deployment",
+          "Guaranteed 14-day delivery",
+          "60-day technical support",
+          "1 year Cloud hosting included"
         ],
-        "btn": "Deploy_Scale",
-        "mostSelected": "Most_Selected"
+        "btn": "Launch my MVP",
+        "mostSelected": "Best ROI"
       },
       "custom": {
-        "name": "Custom_Engine",
-        "info": "Complex infrastructures and multi-platform ecosystems.",
-        "price": "Custom",
+        "name": "Mobile & Business Apps",
+        "info": "Full ecosystem to digitalize your business (Web + iOS + Android).",
+        "price": "8k",
         "features": [
-          "Micro-services architecture",
-          "Native iOS & Android builds",
-          "SOC2 Compliant Security",
-          "Multi-cloud Strategy",
-          "Guaranteed SLA (99.9%)",
-          "Engineering Team On-call"
+          "Responsive Web Application",
+          "iOS & Android mobile apps",
+          "Secure REST / GraphQL API",
+          "Business administration tools",
+          "Real-time synchronization",
+          "Update pipeline (CI/CD)",
+          "90-day priority support",
+          "100% Intellectual Property"
         ],
-        "btn": "Request_Quote"
+        "btn": "Start the project"
       }
     },
-    "baseRate": "Base_Rate",
+    "baseRate": "Starting from",
+    "hosting": {
+      "title": "Cloud Maintenance & Managed Services",
+      "price": "49",
+      "period": "/month excl. VAT",
+      "features": [
+        "High-performance cloud hosting",
+        "Secure database",
+        "Daily backups",
+        "SSL, Security & DDoS Protection",
+        "Critical security updates",
+        "24/7 Monitoring (Uptime)"
+      ]
+    },
     "guarantee": {
       "title": "Datafuse Studio Guarantee",
-      "desc": "Every line of code undergoes internal audit. All builds are delivered with complete technical documentation and adaptive maintenance guarantee."
+      "desc": "Every line of code is subject to a rigorous audit. All our builds are delivered with technical documentation and an adaptive maintenance guarantee."
     }
   },
   "testimonials": {
-    "badge": "Trusted by Leaders",
-    "title": "Industry",
-    "subtitle": "validation.",
+    "badge": "Recognized Expertise",
+    "title": "They chose",
+    "subtitle": "performance.",
     "items": [
       {
-        "text": "DataFuse Studio transformed our vision into an exceptional SaaS platform. Their expertise in Next.js and AWS is unmatched.",
+        "text": "DataFuse Studio transformed our vision into an exceptional SaaS platform. Their mastery of Next.js and SEO allowed us to exceed our goals.",
         "name": "Sophie Martin",
         "role": "CEO, TechStart"
       },
       {
-        "text": "A team that understands business challenges. Our platform handled a +300% load increase in the first month without any latency.",
+        "text": "A team of engineers who understand business. Our business app handled a +300% load from launch without a single bug.",
         "name": "Marc Dubois",
         "role": "Founder, LuxShop"
       },
       {
-        "text": "Solid technical architecture, clean and scalable code. DataFuse perfectly understands the security requirements of a fintech startup.",
+        "text": "Flawless technical architecture. They secured our fintech infrastructure while keeping a fluid interface for our clients.",
         "name": "Emma Rousseau",
         "role": "CTO, AI Analytics"
       },
       {
-        "text": "Their approach to mobile development with React Native allowed us to cut our maintenance costs in half.",
+        "text": "Their expertise in React Native mobile development allowed us to launch on iOS and Android twice as fast as expected.",
         "name": "Laura Chen",
         "role": "Product Manager"
       },
       {
-        "text": "Elegant design and top performance. Core Web Vitals are in the green on all our pages, a real SEO asset.",
+        "text": "Finally an agency that delivers websites that aren't just beautiful, but extremely fast. Core Web Vitals are perfect.",
         "name": "Thomas Bernard",
         "role": "Marketing Director"
       },
       {
-        "text": "Flawless support from MVP to scaling. Transparent communication and on-time delivery.",
+        "text": "End-to-end support, from MVP to scaling. Transparent communication and precision delivery.",
         "name": "Alexandre Petit",
         "role": "Entrepreneur"
       }
     ],
     "stats": {
-      "rating": "Client Rating",
+      "rating": "Customer Rating",
       "projects": "Projects Delivered"
     }
   },
   "faq": {
-    "badge": "Knowledge Base",
+    "badge": "Web & Mobile Expertise FAQ",
     "title": "Technical",
     "subtitle": "questions.",
     "questions": [
       {
-        "category": "Timeline",
-        "title": "What are the project completion times?",
-        "content": "The duration depends on technical complexity. An agile MVP typically takes 4-6 weeks, while a complete SaaS ecosystem requires 3-5 months. We work in iterative cycles (Sprints) with bi-monthly deliveries."
+        "category": "Pricing",
+        "title": "How much does custom app development cost?",
+        "content": "The cost depends on technical complexity. An agile MVP starts at 5k€, while full business software can range from 10k€ to 50k€. We provide a detailed quote after a free audit."
       },
       {
-        "category": "Ops",
-        "title": "Do you offer maintenance after delivery?",
-        "content": "We systematically include 3 months of corrective maintenance. Beyond that, our Tier-Support contracts guarantee dependency updates, infrastructure monitoring, and proactive evolution."
+        "category": "Timeline",
+        "title": "What are your delivery timelines?",
+        "content": "A vitrine site or MVP is delivered in 2 to 4 weeks. For a SaaS ecosystem or complex business app, allow 3 to 5 months. We work in Sprint cycles for bi-monthly deliveries."
       },
       {
         "category": "Legal",
-        "title": "Do you deliver the source code?",
-        "content": "Absolutely. You own the total intellectual property. Upon delivery, we perform a complete transfer of GitHub/GitLab repositories, technical documentation, and infrastructure secrets."
+        "title": "Do I own the source code?",
+        "content": "Absolutely. You hold 100% of the intellectual property. Upon delivery, we transfer GitHub repositories, technical documentation, and server access."
       },
       {
         "category": "Stack",
         "title": "What technologies do you use?",
-        "content": "We specialize in the modern TypeScript stack: Next.js, Node.js, and PostgreSQL. For mobile, we favor React Native. Our infrastructures are deployed via Terraform on AWS or Vercel."
+        "content": "We are experts in the modern TypeScript stack: Next.js for web, React Native for mobile, and Node.js/PostgreSQL for back-end. We host on AWS and Vercel for maximum stability."
       },
       {
-        "category": "Quality",
-        "title": "How do you guarantee code quality?",
-        "content": "Every line of code goes through Code Review. We enforce high unit test coverage and use static analysis tools to ensure long-term maintainability."
+        "category": "Maintenance",
+        "title": "Do you offer post-launch maintenance?",
+        "content": "Yes, we include 3 months of corrective maintenance. We also offer managed service contracts to guarantee server updates, security, and feature evolution."
       }
     ],
     "cta": {
-      "title": "Still have questions?",
-      "desc": "Let's discuss your technical architecture.",
-      "btn": "Talk to an engineer"
+      "title": "Need an external CTO?",
+      "desc": "Let's discuss your technical architecture and objectives.",
+      "btn": "Speak to an engineer"
     }
   },
   "timeline": {
     "badge": "Project Lifecycle",
     "title": "Engineering",
-    "subtitle": "for success.",
+    "subtitle": "success.",
     "phases": [
       {
         "tagline": "ANALYSIS_PHASE",
-        "title": "Discovery & Architecture",
-        "description": "Audit of existing infrastructures and database modeling. We don't code before having a flawless technical roadmap.",
-        "tags": ["UML_SCHEMA", "STACK_REFINEMENT"]
+        "title": "Audit & Architecture",
+        "description": "We model your database and choose the most cost-effective stack for your project. No code without a solid technical strategy.",
+        "tags": ["Technical_Roadmap", "Architecture_Audit"]
       },
       {
         "tagline": "UX_ENGINEERING",
-        "title": "High-Perf Design",
-        "description": "Creation of an atomic Design System. Focus on perceived loading speed and fluid micro-interactions."
+        "title": "High Performance Design",
+        "description": "Creating intuitive interfaces focused on user conversion and perceived loading speed.",
+        "tags": ["UI/UX", "Design_System"]
       },
       {
         "tagline": "BUILD_EXECUTION",
-        "title": "Core Development",
-        "description": "Iterative development with automated CI/CD."
+        "title": "Agile Development",
+        "description": "Iterative coding with automated tests and continuous deployment (CI/CD) to track progress in real-time.",
+        "tags": ["Next.js", "Sprint_Cycles"]
       },
       {
         "tagline": "STABLE_RELEASE",
-        "title": "Launch & Monitoring",
-        "uptime": "UPTIME"
+        "title": "Deployment & Scaling",
+        "uptime": "ACTIVE_MAINTENANCE",
+        "description": "Launch on production servers and performance monitoring to guarantee 99.9% uptime.",
+        "tags": ["Cloud_Deploy", "Monitoring"]
       }
     ]
   },
   "logoCloud": {
-    "badge": "Top-Tier Stack",
-    "title": "Powered by industry standards.",
-    "description": "Scalable architecture . Edge deployment . Enterprise security"
+    "badge": "Cutting-edge Stack",
+    "title": "Powered by market standards.",
+    "description": "Scalable Architecture . Enterprise Security . Cloud Edge Deployment"
   },
   "contact": {
-    "badge": "Start a Project",
+    "badge": "Start a project",
     "title": "Let's talk about your",
     "subtitle": "next build.",
-    "hq": "Datafuse Studio HQ",
-    "emailLabel": "Direct Email",
+    "hq": "Datafuse Studio Paris",
+    "emailLabel": "Business Email",
     "locationLabel": "Location",
-    "location": "Paris, France — Global Remote",
+    "location": "Paris, France — Available Remote",
     "availableTitle": "Studio Available",
-    "availableDesc": "We're currently accepting 2 new projects for <strong>Q2 2026</strong>. Response guaranteed within 24h.",
+    "availableDesc": "We are currently accepting 2 new projects for <strong>Q2 2026</strong>. Response within 24h.",
     "benefits": [
       "Free technical audit",
-      "CTO support",
-      "100% IP contract"
+      "CTO strategy consulting",
+      "100% code ownership"
     ],
     "form": {
       "fullName": "Full Name",
       "fullNamePlaceholder": "John Doe",
       "email": "Business Email",
       "emailPlaceholder": "john@company.com",
-      "serviceType": "Service Type",
+      "serviceType": "Nature of expertise required",
       "serviceOptions": [
-        "SaaS / Web App",
-        "Mobile App",
-        "Audit & Strategy"
+        "SaaS Architecture & Web Platform",
+        "Native Mobile App (iOS/Android)",
+        "Business Tool & Automation (ERP/CRM)",
+        "Premium Website & SEO Strategy",
+        "Booking System & E-commerce",
+        "Technical Audit & CTO Consulting"
       ],
-      "budget": "Budget",
+      "budget": "Forecasted budget envelope",
       "budgetOptions": [
-        "10k€ - 25k€",
-        "25k€ - 50k€",
-        "50k€ +"
+        "Start Project: 2.5k€ — 5k€",
+        "Growth Project: 5k€ — 10k€",
+        "Business Project: 10k€ — 25k€",
+        "Corporate Project: 25k€ — 50k€",
+        "Bespoke: 50k€ +"
       ],
-      "projectBrief": "Project Brief",
-      "projectBriefPlaceholder": "Describe your goals and technical challenges...",
-      "submit": "Start the discussion",
-      "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Error sending. Please try again."
+      "projectBrief": "Project brief or vision",
+      "projectBriefPlaceholder": "Describe your business goals and the technical challenges to overcome...",
+      "submit": "Initialize project analysis",
+      "sending": "Secure transmission...",
+      "success": "Request registered. An engineer will analyze your file within 24h.",
+      "error": "System interruption. Please contact us via email."
     }
   },
   "footer": {
-    "description": "Digital engineering studio specializing in building scalable high-performance solutions. We transform technical complexity into competitive advantage.",
+    "description": "Digital engineering studio specializing in the development of scalable and high-performance applications. We transform your complex ideas into profitable business tools.",
     "sections": {
       "services": {
-        "title": "Services",
+        "title": "App Services",
         "links": [
-          { "name": "SaaS Architecture", "href": "#processus" },
-          { "name": "Web Engineering", "href": "#processus" },
-          { "name": "Mobile Systems", "href": "#processus" },
-          { "name": "Cloud Infrastructure", "href": "#processus" }
+          { "name": "SaaS Development", "href": "#process" },
+          { "name": "Business App", "href": "#process" },
+          { "name": "Mobile App", "href": "#process" },
+          { "name": "Cloud Infrastructure", "href": "#process" }
         ]
       },
       "studio": {
-        "title": "Studio",
+        "title": "Agency",
         "links": [
           { "name": "Our Stack", "href": "#tech" },
-          { "name": "Process", "href": "#processus" },
+          { "name": "Methodology", "href": "#process" },
           { "name": "Testimonials", "href": "#testimonials" },
-          { "name": "Pricing", "href": "#tarifs" }
+          { "name": "Rates & Quotes", "href": "#pricing" }
         ]
       },
       "legal": {
@@ -312,14 +339,12 @@
         "links": [
           { "name": "Legal Notice", "href": "/legal-notice" },
           { "name": "Privacy Policy", "href": "/privacy-policy" },
-          { "name": "Cookies", "href": "/cookie-policy" },
-          { "name": "Terms of Sale", "href": "/terms-of-sale" },
-          { "name": "Terms of Use", "href": "/terms-of-use" }
+          { "name": "T&Cs", "href": "/terms" }
         ]
       }
     },
     "copyright": "© 2026 Datafuse Engineering Group",
     "location": "FRANCE / REMOTE",
-    "scrollTop": "SYSTEM.SCROLL_TOP()"
+    "scrollTop": "BACK_TO_TOP"
   }
 }

@@ -170,7 +170,7 @@ npm install
 ```bash
 npm run dev
 ```
-→ Accessible sur http://localhost:3000
+→ Accessible sur https://datafuseweb-95a5588f8542.herokuapp.com
 
 ### Production
 ```bash

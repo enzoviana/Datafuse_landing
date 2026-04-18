@@ -1,325 +1,350 @@
 {
   "navbar": {
-    "expertise": "Especialização",
+    "expertise": "Expertise App",
     "builds": "Realizações",
-    "projects": "Projetos",
-    "process": "Processo",
-    "login": "Login_",
-    "cta": "Entre em contato"
+    "projects": "Estudos de Caso",
+    "process": "Metodologia",
+    "login": "Área de Cliente",
+    "cta": "Orçamento Grátis"
   },
   "hero": {
-    "badge": "Disponível para projetos Q2 2026",
-    "title": "THE DIGITAL",
-    "subtitle": "FORGE.",
-    "productionReady": "Production Ready",
-    "description": "Não criamos sites simples. Forjamos <strong>arquiteturas escaláveis</strong> e interfaces de <strong>alto desempenho</strong>.",
-    "ctaPrimary": "Inicializar um projeto",
-    "ctaSecondary": "Consultar o Manifesto",
-    "partnersTitle": "Projetado para equipes de classe mundial",
-    "systemOk": "SISTEMA: OK",
-    "uptime": "Disponibilidade: 99.9%",
-    "version": "v2.0.46_studio"
+    "badge": "Agência de Desenvolvimento Web & Móvel",
+    "title": "Engenharia",
+    "subtitle": "Web, Mobile & SaaS",
+    "productionReady": "Soluções de software de alta performance",
+    "description": "Concebemos as suas aplicações de negócio, plataformas SaaS e websites complexos com uma arquitetura escalável e segura.",
+    "ctaPrimary": "Iniciar um projeto",
+    "ctaSecondary": "A nossa expertise",
+    "partnersTitle": "Confiam em nós para a sua transformação digital",
+    "systemOk": "INFRAESTRUTURA: ESTÁVEL",
+    "uptime": "Disponibilidade: 99,9%",
+    "version": "v2026.SEO.PRO"
   },
   "features": {
-    "badge": "Capacidades de Engenharia",
+    "badge": "Engenharia de Software",
     "title": "Excelência em cada",
     "subtitle": "linha de código.",
-    "description": "Não entregamos apenas código, construímos sua vantagem tecnológica.",
+    "description": "Mais do que uma agência web, somos o seu parceiro tecnológico para a criação de soluções digitais rentáveis e escaláveis.",
     "services": {
       "saas": {
-        "title": "SaaS Architecture",
-        "desc": "Sistemas multi-tenant escaláveis. Construímos infraestruturas cloud-native para milhões de usuários.",
-        "stack": ["Next.js", "PostgreSQL", "AWS"]
+        "title": "Desenvolvimento SaaS & Cloud",
+        "desc": "Criação de software SaaS multi-tenant. Arquitetura cloud-native concebida para o crescimento em escala e monetização do seu serviço.",
+        "stack": ["Next.js", "PostgreSQL", "AWS/Vercel"]
       },
       "speed": {
-        "title": "Web Speed",
-        "desc": "Desempenho extremo & SEO.",
-        "stack": ["Vercel", "Turborepo"]
+        "title": "Aplicações de Negócio & Web",
+        "desc": "Digitalização dos seus processos. Desenvolvimento de ferramentas internas (ERP, CRM) ultra-rápidas otimizadas para Core Web Vitals.",
+        "stack": ["Vercel", "Turborepo", "Node.js"]
       },
       "mobile": {
-        "title": "Mobile Foundry",
-        "desc": "iOS & Android sem compromissos.",
-        "stack": ["React Native", "Expo"]
+        "title": "Apps Móveis iOS & Android",
+        "desc": "Desenvolvimento de aplicações móveis híbridas e nativas sem compromisso na fluidez. Uma única base de código para todas as lojas.",
+        "stack": ["React Native", "Expo", "Fastlane"]
       },
       "brand": {
         "title": "Premium Digital Brand",
-        "desc": "Experiências web imersivas. Design de alta precisão com foco total em conversão e Core Web Vitals.",
+        "desc": "Experiências web imersivas e sites vitrine de alta-costura. Design de precisão focado na conversão e na imagem de marca.",
         "stack": ["Tailwind", "Framer", "GSAP"]
       }
     }
   },
   "portfolio": {
-    "badge": "Trabalhos Selecionados",
+    "badge": "Portfólio de Engenharia Digital",
     "title": "Últimos",
-    "subtitle": "Builds.",
-    "description": "Do design à escala, descubra como impulsionamos nossos parceiros.",
+    "subtitle": "Builds de Software.",
+    "description": "Do conceito ao lançamento, descubra como impulsionamos os nossos parceiros com arquiteturas personalizadas e escaláveis.",
     "projects": {
-      "nexus": {
-        "title": "Nexus Analytics",
-        "badge": "SaaS / Web",
-        "desc": "Plataforma SaaS de Business Intelligence capaz de processar 10M+ eventos por segundo.",
-        "tags": ["Next.js", "Go", "Clickhouse", "AWS"]
+      "medialink": {
+        "title": "Media_Link_SAAS",
+        "badge": "SaaS / Multi-Tenant",
+        "desc": "Ecossistema completo de gestão de filas de espera. SuperAdmin, gestão de pontos de venda, ecrãs de exibição e quiosques personalizáveis via CMS dedicado.",
+        "tags": ["SaaS", "CMS", "Web App", "Kiosk System"]
       },
-      "luxe": {
-        "title": "Luxe Mobile",
-        "badge": "Mobile",
-        "desc": "Experiência de compras de alta costura para uma marca de luxo parisiense.",
-        "tags": ["React Native", "Expo", "GSAP"]
+      "dimotec": {
+        "title": "Dimotec Platform",
+        "badge": "App de Negócio / LegalTech",
+        "desc": "Plataforma de ligação para técnicos de diagnóstico imobiliário. Gestão de orçamentos, assinatura eletrónica integrada e acompanhamento de ordens de missão.",
+        "tags": ["Workflow", "E-Signature", "CRM", "Node.js"]
       },
-      "vault": {
-        "title": "SafeVault",
-        "badge": "Fintech",
-        "desc": "Infraestrutura bancária segura com criptografia de ponta a ponta.",
-        "tags": ["Rust", "TypeScript", "PostgreSQL"]
+      "rioave": {
+        "title": "Rio Ave FC Oficial",
+        "badge": "App Móvel / Desporto",
+        "desc": "Aplicação móvel oficial do Rio Ave FC. Estatísticas em tempo real, acompanhamento de jogos e envolvimento dos adeptos (iOS & Android).",
+        "tags": ["React Native", "Real-time Data", "Rest API", "Mobile"]
       },
-      "etheria": {
-        "title": "Etheria Dashboard",
-        "badge": "Infraestrutura",
-        "desc": "Interface de controle em tempo real para uma fazenda de servidores GPU descentralizada.",
-        "tags": ["WebSockets", "D3.js", "Redis"]
+      "natureletjoli": {
+        "title": "Naturel & Joli",
+        "badge": "Web / Ferramenta de Negócio",
+        "desc": "Plataforma de e-business para institutos de estética. Marcações online, gestão de agenda complexa, acompanhamento de clientes e otimização SEO local.",
+        "tags": ["Booking System", "SEO", "UX Design", "Next.js"]
       }
     }
   },
   "pricing": {
-    "badge": "Estratégia de Preços v2.0",
+    "badge": "Tabelas de Desenvolvimento de Apps",
     "title": "Invista na",
-    "subtitle": "excelência.",
-    "description": "Transparência total. Sem custos ocultos. Apenas engenharia de alto nível.",
+    "subtitle": "excelência digital.",
+    "description": "Transparência total. Orçamentos por medida para aplicações complexas. Todos os preços acrescem IVA.",
     "plans": {
       "starter": {
-        "name": "Starter_Build",
-        "info": "Arquitetura MVP otimizada para Time-to-Market agressivo.",
+        "name": "Website Corporativo",
+        "info": "Site vitrine profissional de gama alta para potenciar a sua visibilidade local.",
         "price": "2.5k",
         "features": [
-          "Next.js 14+ (App Router)",
-          "Design UI Atômico",
-          "Auditoria SEO / Core Web Vitals",
-          "Configuração de Infraestrutura Edge",
-          "Suporte L1 (30 dias)"
+          "Site vitrine exclusivo & responsivo",
+          "Otimização SEO (Google)",
+          "Performance ultra-rápida",
+          "Formação em gestão de conteúdos",
+          "Suporte técnico de 30 dias",
+          "Alojamento Premium opcional"
         ],
-        "btn": "Inicializar_MVP"
+        "btn": "Solicitar orçamento"
       },
       "scale": {
-        "name": "Scale_Architect",
-        "info": "Soluções SaaS robustas com infraestruturas de alta disponibilidade.",
-        "price": "8.5k",
+        "name": "MVP Express Startup",
+        "info": "Valide a sua ideia SaaS em 15 dias com uma aplicação pronta a utilizar.",
+        "price": "5k",
         "features": [
-          "Dashboard & Data Viz",
-          "RBAC / Auth Segura",
-          "Otimização de Performance API",
-          "Pipeline CI/CD (GitHub Actions)",
-          "Manutenção Proativa 6m",
-          "Suporte de Arquiteto Dedicado"
+          "Aplicação SaaS funcional",
+          "Sistema de pagamentos (Stripe)",
+          "Dashboard de Administração",
+          "Base de dados gerida",
+          "Testes & Implementação segura",
+          "Entrega garantida em 14 dias",
+          "Suporte técnico de 60 dias",
+          "1 ano de alojamento Cloud incluído"
         ],
-        "btn": "Implantar_Scale",
-        "mostSelected": "Mais_Escolhido"
+        "btn": "Lançar o meu MVP",
+        "mostSelected": "Melhor ROI"
       },
       "custom": {
-        "name": "Custom_Engine",
-        "info": "Infraestruturas complexas e ecossistemas multiplataforma.",
-        "price": "Personalizado",
+        "name": "Apps Móveis & Negócio",
+        "info": "Ecossistema completo para digitalizar a sua empresa (Web + iOS + Android).",
+        "price": "8k",
         "features": [
-          "Arquitetura de Micro-serviços",
-          "Builds nativos iOS & Android",
-          "Segurança SOC2 Compliant",
-          "Estratégia Multi-cloud",
-          "SLA Garantido (99.9%)",
-          "Equipe de Engenharia On-call"
+          "Aplicação Web Responsiva",
+          "Aplicações móveis iOS & Android",
+          "API REST / GraphQL segura",
+          "Ferramentas de administração de negócio",
+          "Sincronização em tempo real",
+          "Pipeline de atualização (CI/CD)",
+          "Suporte prioritário de 90 dias",
+          "100% Propriedade Intelectual"
         ],
-        "btn": "Solicitar_Orçamento"
+        "btn": "Iniciar o projeto"
       }
     },
-    "baseRate": "Taxa_Base",
+    "baseRate": "A partir de",
+    "hosting": {
+      "title": "Manutenção & Gestão de Cloud",
+      "price": "49",
+      "period": "/mês + IVA",
+      "features": [
+        "Alojamento cloud de alta performance",
+        "Base de dados segura",
+        "Cópias de segurança diárias",
+        "SSL, Segurança & Proteção DDoS",
+        "Atualizações de segurança críticas",
+        "Monitorização 24/7 (Uptime)"
+      ]
+    },
     "guarantee": {
-      "title": "Garantia Datafuse Studio",
-      "desc": "Cada linha de código passa por auditoria interna. Todos os builds são entregues com documentação técnica completa e garantia de manutenção adaptativa."
+      "title": "Garantia Studio Datafuse",
+      "desc": "Cada linha de código é submetida a uma auditoria rigorosa. Todos os builds são entregues com documentação técnica e garantia de manutenção adaptativa."
     }
   },
   "testimonials": {
-    "badge": "Confiado por Líderes",
-    "title": "Validação da",
-    "subtitle": "indústria.",
+    "badge": "Expertise Reconhecida",
+    "title": "Eles escolheram",
+    "subtitle": "a performance.",
     "items": [
       {
-        "text": "DataFuse Studio transformou nossa visão em uma plataforma SaaS excepcional. Sua expertise em Next.js e AWS é incomparável.",
+        "text": "O Studio DataFuse transformou a nossa visão numa plataforma SaaS excecional. O domínio que têm de Next.js e SEO permitiu-nos superar os nossos objetivos.",
         "name": "Sophie Martin",
         "role": "CEO, TechStart"
       },
       {
-        "text": "Uma equipe que entende desafios de negócios. Nossa plataforma suportou um aumento de carga de +300% no primeiro mês sem latência.",
+        "text": "Uma equipa de engenheiros que compreende o negócio. A nossa aplicação de gestão suportou uma carga de +300% desde o lançamento sem qualquer erro.",
         "name": "Marc Dubois",
         "role": "Fundador, LuxShop"
       },
       {
-        "text": "Arquitetura técnica sólida, código limpo e escalável. DataFuse entende perfeitamente os requisitos de segurança de uma startup fintech.",
+        "text": "Arquitetura técnica impecável. Souberam segurar a nossa infraestrutura fintech mantendo uma interface fluida para os nossos clientes.",
         "name": "Emma Rousseau",
         "role": "CTO, AI Analytics"
       },
       {
-        "text": "Sua abordagem ao desenvolvimento mobile com React Native nos permitiu cortar custos de manutenção pela metade.",
+        "text": "A sua expertise em desenvolvimento móvel React Native permitiu-nos lançar para iOS e Android duas vezes mais rápido do que o previsto.",
         "name": "Laura Chen",
         "role": "Product Manager"
       },
       {
-        "text": "Design elegante e desempenho excepcional. Core Web Vitals estão no verde em todas as nossas páginas, um verdadeiro ativo SEO.",
+        "text": "Finalmente uma agência que entrega sites que não são apenas bonitos, mas extremamente rápidos. Os Core Web Vitals estão perfeitos.",
         "name": "Thomas Bernard",
         "role": "Diretor de Marketing"
       },
       {
-        "text": "Suporte impecável do MVP à escala. Comunicação transparente e entrega no prazo.",
+        "text": "Acompanhamento de A a Z, do MVP à escala. Comunicação transparente e entrega milimétrica.",
         "name": "Alexandre Petit",
         "role": "Empreendedor"
       }
     ],
     "stats": {
-      "rating": "Avaliação do Cliente",
+      "rating": "Avaliação Clientes",
       "projects": "Projetos Entregues"
     }
   },
   "faq": {
-    "badge": "Base de Conhecimento",
-    "title": "Perguntas",
+    "badge": "FAQ de Expertise Web & Mobile",
+    "title": "Questões",
     "subtitle": "técnicas.",
     "questions": [
       {
-        "category": "Prazos",
-        "title": "Quais são os prazos de conclusão do projeto?",
-        "content": "A duração depende da complexidade técnica. Um MVP ágil geralmente leva 4-6 semanas, enquanto um ecossistema SaaS completo requer 3-5 meses. Trabalhamos em ciclos iterativos (Sprints) com entregas quinzenais."
+        "category": "Preços",
+        "title": "Quanto custa o desenvolvimento de uma aplicação por medida?",
+        "content": "O custo depende da complexidade técnica. Um MVP ágil começa nos 5k€, enquanto um software de negócio completo pode variar entre 10k€ e 50k€. Fornecemos um orçamento detalhado após uma auditoria gratuita."
       },
       {
-        "category": "Ops",
-        "title": "Vocês oferecem manutenção após a entrega?",
-        "content": "Incluímos sistematicamente 3 meses de manutenção corretiva. Além disso, nossos contratos de Tier-Support garantem atualização de dependências, monitoramento de infraestrutura e evolução proativa."
+        "category": "Prazos",
+        "title": "Quais são os vossos prazos de realização?",
+        "content": "Um site vitrine ou um MVP é entregue em 2 a 4 semanas. Para um ecossistema SaaS ou uma aplicação complexa, preveja 3 a 5 meses. Trabalhamos em ciclos de Sprints com entregas quinzenais."
       },
       {
         "category": "Legal",
-        "title": "Vocês entregam o código fonte?",
-        "content": "Absolutamente. Você possui a propriedade intelectual total. Na entrega, realizamos uma transferência completa dos repositórios GitHub/GitLab, documentação técnica e segredos de infraestrutura."
+        "title": "O código-fonte pertence-me?",
+        "content": "Absolutamente. Detém 100% da propriedade intelectual. Na entrega, transferimos os repositórios GitHub, a documentação técnica e os acessos aos servidores."
       },
       {
         "category": "Stack",
-        "title": "Quais tecnologias vocês usam?",
-        "content": "Somos especializados na stack TypeScript moderna: Next.js, Node.js e PostgreSQL. Para mobile, priorizamos React Native. Nossas infraestruturas são implantadas via Terraform na AWS ou Vercel."
+        "title": "Que tecnologias utilizam?",
+        "content": "Somos especialistas na stack TypeScript moderna: Next.js para web, React Native para mobile, e Node.js/PostgreSQL para back-end. Alojamos na AWS e Vercel para estabilidade máxima."
       },
       {
-        "category": "Qualidade",
-        "title": "Como vocês garantem a qualidade do código?",
-        "content": "Cada linha de código passa por Code Review. Impomos alta cobertura de testes unitários e usamos ferramentas de análise estática para garantir manutenibilidade a longo prazo."
+        "category": "Manutenção",
+        "title": "Oferecem manutenção após o lançamento?",
+        "content": "Sim, incluímos 3 meses de manutenção corretiva. Também propomos contratos de gestão de servidores para garantir atualizações, segurança e evolução das funcionalidades."
       }
     ],
     "cta": {
-      "title": "Ainda tem perguntas?",
-      "desc": "Vamos discutir sua arquitetura técnica.",
+      "title": "Precisa de um CTO externo?",
+      "desc": "Vamos discutir a sua arquitetura técnica e os seus objetivos.",
       "btn": "Falar com um engenheiro"
     }
   },
   "timeline": {
     "badge": "Ciclo de Vida do Projeto",
-    "title": "Engenharia",
-    "subtitle": "para o sucesso.",
+    "title": "A engenharia",
+    "subtitle": "do sucesso.",
     "phases": [
       {
-        "tagline": "FASE_ANÁLISE",
-        "title": "Discovery & Architecture",
-        "description": "Auditoria de infraestruturas existentes e modelagem de banco de dados. Não codificamos antes de ter um roadmap técnico impecável.",
-        "tags": ["UML_SCHEMA", "STACK_REFINEMENT"]
+        "tagline": "PHASE_ANALYSE",
+        "title": "Auditoria & Arquitetura",
+        "description": "Modelamos a sua base de dados e escolhemos a stack mais rentável para o seu projeto. Não há código sem uma estratégia técnica sólida.",
+        "tags": ["Roadmap_Técnico", "Auditoria_Arquitetura"]
       },
       {
         "tagline": "UX_ENGINEERING",
-        "title": "High-Perf Design",
-        "description": "Criação de um Design System atômico. Foco na velocidade de carregamento percebida e micro-interações fluidas."
+        "title": "Design de Alta Performance",
+        "description": "Criação de interfaces intuitivas focadas na conversão do utilizador e na velocidade de carregamento percebida.",
+        "tags": ["UI/UX", "Design_System"]
       },
       {
         "tagline": "BUILD_EXECUTION",
-        "title": "Core Development",
-        "description": "Desenvolvimento iterativo com CI/CD automatizado."
+        "title": "Desenvolvimento Ágil",
+        "description": "Codificação iterativa com testes automatizados e implementação contínua (CI/CD) para acompanhar o progresso em tempo real.",
+        "tags": ["Next.js", "Sprint_Cycles"]
       },
       {
         "tagline": "STABLE_RELEASE",
-        "title": "Launch & Monitoring",
-        "uptime": "DISPONIBILIDADE"
+        "title": "Implementação & Escala",
+        "uptime": "MANUTENÇÃO_ATIVA",
+        "description": "Lançamento nos servidores de produção e monitorização de performance para garantir um uptime de 99,9%.",
+        "tags": ["Cloud_Deploy", "Monitoring"]
       }
     ]
   },
   "logoCloud": {
-    "badge": "Stack de Primeira Linha",
-    "title": "Impulsionado pelos padrões da indústria.",
-    "description": "Arquitetura escalável . Implantação Edge . Segurança Enterprise"
+    "badge": "Stack de Ponta",
+    "title": "Impulsionado pelos padrões do mercado.",
+    "description": "Arquitetura Escalável . Segurança Enterprise . Implementação Cloud Edge"
   },
   "contact": {
-    "badge": "Iniciar um Projeto",
-    "title": "Vamos falar sobre seu",
+    "badge": "Iniciar um projeto",
+    "title": "Vamos falar sobre o seu",
     "subtitle": "próximo build.",
-    "hq": "Datafuse Studio HQ",
-    "emailLabel": "Email Direto",
+    "hq": "Datafuse Studio Paris",
+    "emailLabel": "Email de Negócio",
     "locationLabel": "Localização",
-    "location": "Paris, França — Global Remote",
-    "availableTitle": "Studio Disponível",
-    "availableDesc": "Atualmente estamos aceitando 2 novos projetos para o <strong>Q2 2026</strong>. Resposta garantida em 24h.",
+    "location": "Paris, França — Disponível em Remoto",
+    "availableTitle": "Estúdio Disponível",
+    "availableDesc": "Estamos atualmente a aceitar 2 novos projetos para o <strong>Q2 2026</strong>. Resposta em 24h.",
     "benefits": [
       "Auditoria técnica gratuita",
-      "Suporte CTO",
-      "Contrato IP 100%"
+      "Consultoria em estratégia de CTO",
+      "100% de propriedade do código"
     ],
     "form": {
       "fullName": "Nome Completo",
       "fullNamePlaceholder": "João Silva",
-      "email": "Email Comercial",
+      "email": "Email de Negócio",
       "emailPlaceholder": "joao@empresa.com",
-      "serviceType": "Tipo de Serviço",
+      "serviceType": "Natureza da expertise necessária",
       "serviceOptions": [
-        "SaaS / App Web",
-        "App Mobile",
-        "Auditoria & Estratégia"
+        "Arquitetura SaaS & Plataforma Web",
+        "App Móvel Nativa (iOS/Android)",
+        "Ferramenta de Negócio & Automação (ERP/CRM)",
+        "Site Vitrine & Estratégia SEO Premium",
+        "Sistema de Reservas & E-commerce",
+        "Auditoria Técnica & Consultoria CTO"
       ],
-      "budget": "Orçamento",
+      "budget": "Envelope orçamental previsto",
       "budgetOptions": [
-        "10k€ - 25k€",
-        "25k€ - 50k€",
-        "50k€ +"
+        "Projeto Start: 2.5k€ — 5k€",
+        "Projeto Crescimento: 5k€ — 10k€",
+        "Projeto Business: 10k€ — 25k€",
+        "Projeto Corporate: 25k€ — 50k€",
+        "Por medida: 50k€ +"
       ],
-      "projectBrief": "Resumo do Projeto",
-      "projectBriefPlaceholder": "Descreva seus objetivos e desafios técnicos...",
-      "submit": "Iniciar a discussão",
-      "sending": "Enviando...",
-      "success": "Mensagem enviada com sucesso!",
-      "error": "Erro ao enviar. Tente novamente."
+      "projectBrief": "Briefing ou visão do projeto",
+      "projectBriefPlaceholder": "Descreva os seus objetivos de negócio e os desafios técnicos a superar...",
+      "submit": "Inicializar análise do projeto",
+      "sending": "Transmissão segura...",
+      "success": "Pedido registado. Um engenheiro analisará o seu dossier em 24h.",
+      "error": "Interrupção do sistema. Por favor, contacte-nos por email."
     }
   },
   "footer": {
-    "description": "Studio de engenharia digital especializado em construir soluções escaláveis de alto desempenho. Transformamos complexidade técnica em vantagem competitiva.",
+    "description": "Estúdio de engenharia digital especializado no desenvolvimento de aplicações escaláveis e performantes. Transformamos as suas ideias complexas em ferramentas de negócio rentáveis.",
     "sections": {
       "services": {
-        "title": "Serviços",
+        "title": "Serviços App",
         "links": [
-          { "name": "Arquitetura SaaS", "href": "#processus" },
-          { "name": "Engenharia Web", "href": "#processus" },
-          { "name": "Sistemas Mobile", "href": "#processus" },
-          { "name": "Infraestrutura Cloud", "href": "#processus" }
+          { "name": "Desenvolvimento SaaS", "href": "#process" },
+          { "name": "App de Negócio", "href": "#process" },
+          { "name": "App Móvel", "href": "#process" },
+          { "name": "Infraestrutura Cloud", "href": "#process" }
         ]
       },
       "studio": {
-        "title": "Studio",
+        "title": "Agência",
         "links": [
-          { "name": "Nossa Stack", "href": "#tech" },
-          { "name": "Processo", "href": "#processus" },
-          { "name": "Depoimentos", "href": "#testimonials" },
-          { "name": "Preços", "href": "#tarifs" }
+          { "name": "A nossa Stack", "href": "#tech" },
+          { "name": "Metodologia", "href": "#process" },
+          { "name": "Testemunhos", "href": "#testimonials" },
+          { "name": "Preços & Orçamentos", "href": "#pricing" }
         ]
       },
       "legal": {
         "title": "Legal",
         "links": [
-          { "name": "Aviso Legal", "href": "/aviso-legal" },
-          { "name": "Política de Privacidade", "href": "/politica-privacidade" },
-          { "name": "Cookies", "href": "/politica-cookies" },
-          { "name": "Termos de Venda", "href": "/termos-venda" },
-          { "name": "Termos de Uso", "href": "/termos-uso" }
+          { "name": "Avisos Legais", "href": "/mentions-legales" },
+          { "name": "Privacidade", "href": "/politique-confidentialite" },
+          { "name": "Termos & Condições", "href": "/cgv" }
         ]
       }
     },
     "copyright": "© 2026 Datafuse Engineering Group",
     "location": "FRANÇA / REMOTO",
-    "scrollTop": "SYSTEM.SCROLL_TOP()"
+    "scrollTop": "VOLTAR_AO_TOPO"
   }
 }

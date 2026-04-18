@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+Ouvrez [https://datafuseweb-95a5588f8542.herokuapp.com](https://datafuseweb-95a5588f8542.herokuapp.com) dans votre navigateur.
 
 ### 3️⃣ C'est parti ! 🎉
 
@@ -54,7 +54,7 @@ Tous les textes sont directement dans les composants :
 
 ```bash
 # Desktop
-http://localhost:3000
+https://datafuseweb-95a5588f8542.herokuapp.com
 
 # Mobile (avec DevTools)
 Ouvrir DevTools > Toggle Device Toolbar (Ctrl+Shift+M)

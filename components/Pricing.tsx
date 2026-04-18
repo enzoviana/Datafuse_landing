@@ -6,62 +6,63 @@ import { Check, Zap, Crown, Rocket } from 'lucide-react'
 export default function Pricing() {
   const plans = [
     {
-      name: 'Starter',
+      name: 'Site Web',
       icon: Zap,
-      price: '2 500',
+      price: '2 000',
       period: 'À partir de',
-      description: 'Parfait pour les petits projets et MVP',
+      description: 'Site vitrine professionnel et moderne',
       features: [
         'Site vitrine responsive',
         'Design personnalisé',
         'SEO optimisé',
-        'Hébergement inclus (1 an)',
-        'Support 30 jours',
         'Formation incluse',
+        'Support 30 jours',
+        'Hébergement en option (50€/mois)',
       ],
       gradient: 'from-blue-500 to-cyan-500',
       popular: false,
+      priceNote: 'HT',
     },
     {
-      name: 'Professional',
+      name: 'MVP Express',
       icon: Crown,
-      price: '8 500',
-      period: 'À partir de',
-      description: 'Pour les applications web complexes',
+      price: '4 500',
+      period: 'Livré en 2 semaines',
+      description: 'Validez votre idée rapidement',
       features: [
-        'Application web complète',
+        'Application complète et fonctionnelle',
         'Dashboard admin',
-        'Authentification avancée',
+        'Authentification utilisateur',
+        'Base de données configurée',
+        'Tests et déploiement',
+        'Livraison garantie en 14 jours',
+        'Support 60 jours',
+        'Hébergement en option (50€/mois)',
+      ],
+      gradient: 'from-purple-500 to-pink-500',
+      popular: true,
+      priceNote: 'HT',
+    },
+    {
+      name: 'Apps Mobile & Web',
+      icon: Rocket,
+      price: '7 500',
+      period: 'À partir de',
+      description: 'Applications web et mobile complètes',
+      features: [
+        'Application web responsive',
+        'Applications mobiles (iOS & Android)',
         'API REST/GraphQL',
+        'Dashboard administrateur',
         'Base de données optimisée',
         'Tests automatisés',
         'CI/CD pipeline',
         'Support 90 jours',
-        'Maintenance 6 mois',
-      ],
-      gradient: 'from-purple-500 to-pink-500',
-      popular: true,
-    },
-    {
-      name: 'Enterprise',
-      icon: Rocket,
-      price: 'Sur mesure',
-      period: 'Projet complexe',
-      description: 'Solutions d\'entreprise sur-mesure',
-      features: [
-        'SaaS multi-tenant',
-        'Architecture micro-services',
-        'Applications mobile natives',
-        'Infrastructure cloud',
-        'Sécurité renforcée',
-        'Analytics & BI',
-        'Support 24/7',
-        'SLA garantis',
-        'Équipe dédiée',
-        'Évolutivité illimitée',
+        'Hébergement en option (50€/mois)',
       ],
       gradient: 'from-orange-500 to-red-500',
       popular: false,
+      priceNote: 'HT',
     },
   ]
 
@@ -115,8 +116,9 @@ export default function Pricing() {
                 <div className="text-sm text-gray-500 mb-1">{plan.period}</div>
                 <div className="flex items-baseline">
                   <span className="text-4xl font-bold gradient-text">{plan.price}</span>
-                  {plan.price !== 'Sur mesure' && <span className="text-gray-600 ml-2">€</span>}
+                  <span className="text-gray-600 ml-2">€</span>
                 </div>
+                <div className="text-xs text-gray-500 mt-1">{plan.priceNote}</div>
               </div>
 
               <ul className="space-y-3 mb-8">
@@ -140,6 +142,8 @@ export default function Pricing() {
             </motion.div>
           ))}
         </div>
+
+
 
         <motion.div
           initial={{ opacity: 0 }}

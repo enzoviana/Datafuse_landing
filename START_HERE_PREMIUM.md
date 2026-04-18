@@ -25,7 +25,7 @@ npm run dev
 
 ### 3. Ouverture
 
-Ouvrez **http://localhost:3000** dans votre navigateur
+Ouvrez **https://datafuseweb-95a5588f8542.herokuapp.com** dans votre navigateur
 
 **TADA ! Votre landing page premium est en ligne ! 🎉**
 

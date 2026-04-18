@@ -38,7 +38,7 @@ RESEND_API_KEY=re_votre_cle_api_resend
 npm run dev
 ```
 
-2. Allez sur [http://localhost:3000](http://localhost:3000)
+2. Allez sur [https://datafuseweb-95a5588f8542.herokuapp.com](https://datafuseweb-95a5588f8542.herokuapp.com)
 3. Remplissez le formulaire de contact
 4. Vérifiez que vous recevez l'email à `contact@datafuse.fr`
 

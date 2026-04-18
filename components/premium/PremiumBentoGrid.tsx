@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { ExternalLink, Smartphone, Globe, Layout, Zap, Code2, ArrowUpRight, ArrowRight } from 'lucide-react'
+import { ExternalLink, Smartphone, Globe, Layout, Zap, Code2, ArrowUpRight, ArrowRight, FileText } from 'lucide-react'
 import { useTranslation } from '@/contexts/LanguageContext'
 import Link from 'next/link'
 
@@ -124,61 +124,48 @@ export default function PremiumBentoPortfolio() {
         </div>
 
         {/* Bento Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[450px]">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[450px]">
+  
+  {/* Media Link SAAS - Occupant 2 colonnes pour l'aspect système complet */}
+  <ProjectCard
+    className="md:col-span-2"
+    title={t.portfolio.projects.medialink.title}
+    icon={Layout} // Icône Dashboard/CMS
+    description={t.portfolio.projects.medialink.desc}
+    badge={t.portfolio.projects.medialink.badge}
+    tags={t.portfolio.projects.medialink.tags}
+  />
 
-          {/* Projet Principal - SaaS */}
-          <ProjectCard
-            className="md:col-span-2"
-            title={t.portfolio.projects.nexus.title}
-            icon={Layout}
-            description={t.portfolio.projects.nexus.desc}
-            badge={t.portfolio.projects.nexus.badge}
-            tags={t.portfolio.projects.nexus.tags}
-          />
+  {/* Rio Ave FC - Mobile */}
+  <ProjectCard
+    title={t.portfolio.projects.rioave.title}
+    icon={Smartphone} // Icône App Mobile
+    description={t.portfolio.projects.rioave.desc}
+    badge={t.portfolio.projects.rioave.badge}
+    tags={t.portfolio.projects.rioave.tags}
+  />
 
-          {/* Projet Mobile */}
-          <ProjectCard
-            title={t.portfolio.projects.luxe.title}
-            icon={Smartphone}
-            description={t.portfolio.projects.luxe.desc}
-            badge={t.portfolio.projects.luxe.badge}
-            tags={t.portfolio.projects.luxe.tags}
-          />
+  {/* Dimotec - App Métier */}
+  <ProjectCard
+    title={t.portfolio.projects.dimotec.title}
+    icon={FileText} // Icône Document/Devis
+    description={t.portfolio.projects.dimotec.desc}
+    badge={t.portfolio.projects.dimotec.badge}
+    tags={t.portfolio.projects.dimotec.tags}
+  />
 
-          {/* Projet Fintech */}
-          <ProjectCard
-            title={t.portfolio.projects.vault.title}
-            icon={Code2}
-            description={t.portfolio.projects.vault.desc}
-            badge={t.portfolio.projects.vault.badge}
-            tags={t.portfolio.projects.vault.tags}
-          />
+  {/* Naturel & Joli - Site Vitrine & Booking */}
+  <ProjectCard
+    className="md:col-span-2"
+    title={t.portfolio.projects.natureletjoli.title}
+    icon={Zap} // Icône Performance/SEO
+    description={t.portfolio.projects.natureletjoli.desc}
+    badge={t.portfolio.projects.natureletjoli.badge}
+    tags={t.portfolio.projects.natureletjoli.tags}
+  />
+</div>
 
-          {/* Projet Dashboard */}
-          <ProjectCard
-            className="md:col-span-2"
-            title={t.portfolio.projects.etheria.title}
-            icon={Zap}
-            description={t.portfolio.projects.etheria.desc}
-            badge={t.portfolio.projects.etheria.badge}
-            tags={t.portfolio.projects.etheria.tags}
-          />
-        </div>
 
-        {/* CTA to view all projects */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <Link href="/projets">
-            <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-bold text-sm tracking-widest uppercase hover:shadow-2xl hover:shadow-blue-500/20 transition-all inline-flex items-center gap-3">
-              Voir tous nos projets
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </Link>
-        </motion.div>
       </div>
     </section>
   )

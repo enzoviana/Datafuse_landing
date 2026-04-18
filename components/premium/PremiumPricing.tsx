@@ -133,8 +133,10 @@ export default function PremiumPricing() {
           ))}
         </div>
 
+
+
         {/* Bottom Annotation */}
-        <div className="mt-24 max-w-2xl mx-auto p-6 rounded-2xl border border-dashed border-white/10 bg-white/[0.01] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+        <div className="mt-16 max-w-2xl mx-auto p-6 rounded-2xl border border-dashed border-white/10 bg-white/[0.01] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
             <div className="size-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500 shrink-0">
                 <ShieldCheck size={24} />
             </div>
