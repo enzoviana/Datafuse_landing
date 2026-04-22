@@ -123,6 +123,30 @@ export default function PremiumBentoPortfolio() {
           </p>
         </div>
 
+        {/* Portfolio Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 text-center"
+        >
+          <div className="p-6 bg-white/[0.02] border border-white/5 rounded-2xl">
+            <div className="text-3xl font-bold text-white mb-2">127</div>
+            <div className="text-xs text-gray-500 font-mono uppercase tracking-wider">projets livrés</div>
+          </div>
+          <div className="p-6 bg-white/[0.02] border border-white/5 rounded-2xl">
+            <div className="text-3xl font-bold text-blue-400 mb-2">98/100</div>
+            <div className="text-xs text-gray-500 font-mono uppercase tracking-wider">score moyen</div>
+          </div>
+          <div className="p-6 bg-white/[0.02] border border-white/5 rounded-2xl">
+            <div className="text-3xl font-bold text-green-400 mb-2">-87%</div>
+            <div className="text-xs text-gray-500 font-mono uppercase tracking-wider">load time</div>
+          </div>
+          <div className="p-6 bg-white/[0.02] border border-white/5 rounded-2xl">
+            <div className="text-3xl font-bold text-white mb-2">100%</div>
+            <div className="text-xs text-gray-500 font-mono uppercase tracking-wider">satisfaits</div>
+          </div>
+        </motion.div>
+
         {/* Bento Grid layout */}
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[450px]">
   

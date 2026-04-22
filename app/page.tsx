@@ -3,12 +3,15 @@
 import { useState } from 'react'
 import PremiumNavbar from '@/components/premium/PremiumNavbar'
 import PremiumHero from '@/components/premium/PremiumHero'
+import PremiumStats from '@/components/premium/PremiumStats'
 import PremiumFeatures from '@/components/premium/PremiumFeatures'
 import PremiumBentoGrid from '@/components/premium/PremiumBentoGrid'
 import PremiumTimeline from '@/components/premium/PremiumTimeline'
+import PremiumTeam from '@/components/premium/PremiumTeam'
 import PremiumLogoCloud from '@/components/premium/PremiumLogoCloud'
-import PremiumPricing from '@/components/premium/PremiumPricing'
 import PremiumTestimonials from '@/components/premium/PremiumTestimonials'
+import PremiumGuarantees from '@/components/premium/PremiumGuarantees'
+import PremiumPricing from '@/components/premium/PremiumPricing'
 import PremiumFAQ from '@/components/premium/PremiumFAQ'
 import PremiumChatbot from '@/components/premium/PremiumChatbot'
 import PremiumAppointmentBooking from '@/components/premium/PremiumAppointmentBooking'
@@ -29,16 +32,18 @@ export default function Home() {
       )}
       <PremiumNavbar onOpenForm={() => setIsFormOpen(true)} />
       <PremiumHero />
+      <PremiumStats />
       <PremiumFeatures />
       <PremiumBentoGrid />
       <PremiumTimeline />
-       <PremiumMap />
-      <PremiumPricing />
+      <PremiumTeam />
       <PremiumTestimonials />
+      <PremiumGuarantees />
+      <PremiumPricing />
       <PremiumFAQ />
       <PremiumAppointmentBooking />
       <Contact />
-      
+
       <Footer />
     </main>
   )

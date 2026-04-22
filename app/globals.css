@@ -18,7 +18,8 @@
   }
 
   body {
-    @apply bg-white text-gray-900;
+    background-color: rgb(2 2 3 / var(--tw-bg-opacity, 1));
+    @apply  text-gray-900;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }

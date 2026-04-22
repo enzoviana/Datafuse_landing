@@ -69,10 +69,24 @@ export default function PremiumFAQ() {
           ))}
         </Accordion>
 
+        {/* Response time stat */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="mt-16 p-8 rounded-3xl border border-dashed border-white/10 flex flex-col md:flex-row items-center justify-between gap-6"
+          className="mt-12 text-center"
+        >
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-blue-500/10 border border-blue-500/20 rounded-full">
+            <div className="size-2 bg-blue-400 rounded-full animate-pulse" />
+            <span className="text-sm font-mono text-blue-400">
+              Temps de réponse moyen : &lt;2h • 98% satisfaits
+            </span>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="mt-8 p-8 rounded-3xl border border-dashed border-white/10 bg-white/[0.02] flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <div className="flex items-center gap-4">
             <div className="size-12 rounded-full bg-blue-600/10 flex items-center justify-center text-blue-500">
@@ -85,7 +99,7 @@ export default function PremiumFAQ() {
           </div>
           <a
             href="#contact"
-            className="px-8 py-3 bg-white text-black rounded-xl font-bold hover:scale-105 transition-transform"
+            className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold hover:scale-105 transition-all shadow-lg shadow-blue-500/30"
           >
             {t.faq.cta.btn}
           </a>

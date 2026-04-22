@@ -19,12 +19,23 @@ export default function PremiumTimeline() {
           <p className="text-gray-400 text-sm leading-relaxed font-light">
             {t.timeline.phases[0].description}
           </p>
-          <div className="flex gap-2">
+          <div className="flex gap-2 mb-4">
             {t.timeline.phases[0].tags?.map((tag, i) => (
               <span key={i} className={`text-[9px] font-mono px-2 py-1 border rounded ${i === 0 ? 'bg-blue-500/10 text-blue-400 border-blue-500/20' : 'bg-white/5 text-gray-500 border-white/10'}`}>
                 {tag}
               </span>
             ))}
+          </div>
+          <div className="flex gap-4 text-sm">
+            <div>
+              <span className="text-white font-bold">2-3 jours</span>
+              <span className="text-gray-500 text-xs ml-2">délai moyen</span>
+            </div>
+            <div className="w-px bg-white/10" />
+            <div>
+              <span className="text-green-400 font-bold">100%</span>
+              <span className="text-gray-500 text-xs ml-2">validés</span>
+            </div>
           </div>
         </div>
       ),
@@ -39,9 +50,20 @@ export default function PremiumTimeline() {
           <p className="text-gray-400 text-sm leading-relaxed font-light">
             {t.timeline.phases[1].description}
           </p>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 mb-4">
             <div className="h-1 bg-white/10 rounded-full overflow-hidden"><div className="w-full h-full bg-blue-500/50" /></div>
             <div className="h-1 bg-white/10 rounded-full overflow-hidden"><div className="w-2/3 h-full bg-blue-500/50" /></div>
+          </div>
+          <div className="flex gap-4 text-sm">
+            <div>
+              <span className="text-white font-bold">3-5 jours</span>
+              <span className="text-gray-500 text-xs ml-2">conception</span>
+            </div>
+            <div className="w-px bg-white/10" />
+            <div>
+              <span className="text-blue-400 font-bold">2.1 révisions</span>
+              <span className="text-gray-500 text-xs ml-2">en moyenne</span>
+            </div>
           </div>
         </div>
       ),
@@ -53,13 +75,24 @@ export default function PremiumTimeline() {
       icon: <Code2 className="size-5" />,
       content: (
         <div className="space-y-4">
-          <div className="bg-[#050505] border border-white/5 p-4 rounded-lg font-mono text-[10px] text-gray-500 italic">
+          <div className="bg-[#050505] border border-white/5 p-4 rounded-lg font-mono text-[10px] text-gray-500 italic mb-4">
             <span className="text-blue-500">const</span> build = <span className="text-yellow-500">async</span> () ={">"} {"{"} <br />
             &nbsp;&nbsp;await <span className="text-purple-500">Datafuse</span>.optimize(); <br />
             &nbsp;&nbsp;return <span className="text-green-500">"SUCCESS"</span>; <br />
             {"}"}
           </div>
-          <p className="text-gray-400 text-sm font-light">{t.timeline.phases[2].description}</p>
+          <p className="text-gray-400 text-sm font-light mb-4">{t.timeline.phases[2].description}</p>
+          <div className="flex gap-4 text-sm">
+            <div>
+              <span className="text-white font-bold">2-4 semaines</span>
+              <span className="text-gray-500 text-xs ml-2">développement</span>
+            </div>
+            <div className="w-px bg-white/10" />
+            <div>
+              <span className="text-green-400 font-bold">0 bugs critiques</span>
+              <span className="text-gray-500 text-xs ml-2">à la livraison</span>
+            </div>
+          </div>
         </div>
       ),
     },
@@ -74,10 +107,21 @@ export default function PremiumTimeline() {
             <span className="text-blue-400">{t.timeline.phases[3].uptime}</span>
             <span className="text-green-500">99.99%</span>
           </div>
-          <div className="flex gap-1 items-end h-8">
+          <div className="flex gap-1 items-end h-8 mb-4">
             {[40, 60, 35, 90, 55, 70, 45].map((h, i) => (
               <div key={i} className="flex-1 bg-blue-500/20 rounded-t-sm" style={{ height: `${h}%` }} />
             ))}
+          </div>
+          <div className="flex gap-4 text-sm">
+            <div>
+              <span className="text-white font-bold">30 jours</span>
+              <span className="text-gray-500 text-xs ml-2">maintenance gratuite</span>
+            </div>
+            <div className="w-px bg-white/10" />
+            <div>
+              <span className="text-green-400 font-bold">0 retard</span>
+              <span className="text-gray-500 text-xs ml-2">depuis 2024</span>
+            </div>
           </div>
         </div>
       ),

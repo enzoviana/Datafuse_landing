@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Terminal, ArrowRight } from 'lucide-react'
+import { Menu, X, Terminal, ArrowRight, Languages } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from '@/contexts/LanguageContext'
 import LanguageSelector from '@/components/LanguageSelector'
@@ -13,7 +13,9 @@ interface NavbarProps {
 export default function Navbar({ onOpenForm }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { t } = useTranslation()
+  
+  // Extraímos t para traduções, language para o estado atual e setLanguage para mudar a língua
+  const { t, language, setLanguage } = useTranslation()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -24,9 +26,14 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
   const navLinks = [
     { name: t.navbar.expertise, href: '#services' },
     { name: t.navbar.builds, href: '#portfolio' },
-    { name: t.navbar.projects, href: '/projets' },
-    { name: 'IA Studio', href: '/ia' },
     { name: t.navbar.process, href: '#process' },
+  ]
+
+  // Configuração das línguas para o seletor mobile
+  const languages = [
+    { code: 'fr', label: 'FR' },
+    { code: 'pt', label: 'PT' },
+    { code: 'en', label: 'EN' }
   ]
 
   return (
@@ -75,13 +82,13 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
             </nav>
           </div>
 
-          {/* Section Droite : Actions */}
+          {/* Section Droite : Actions (PC reste inchangé) */}
           <div className="flex items-center gap-3 md:gap-6">
             <div className="hidden md:flex items-center gap-6 border-r border-white/10 pr-6">
               <LanguageSelector />
             </div>
 
-            {/* CTA Bouton - Adaptatif Mobile */}
+            {/* CTA Bouton */}
             <button
               onClick={onOpenForm}
               className="relative px-4 py-2 md:px-6 md:py-3 rounded-lg md:rounded-xl bg-white text-black text-[9px] md:text-[10px] font-black tracking-[0.1em] md:tracking-[0.2em] uppercase overflow-hidden transition-all hover:scale-[1.02] active:scale-95 group shrink-0"
@@ -97,7 +104,7 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
             {/* Mobile Toggle */}
             <button 
               onClick={() => setIsOpen(!isOpen)} 
-              className="lg:hidden p-1.5 text-white hover:bg-white/10 rounded-lg transition-colors"
+              className="lg:hidden p-1.5 text-white hover:bg-white/10 rounded-lg transition-colors border border-white/10"
             >
               {isOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -105,7 +112,7 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
         </div>
       </div>
 
-      {/* Menu Mobile Full Screen */}
+      {/* Menu Mobile Full Screen Otimizado */}
       <AnimatePresence>
         {isOpen && (
           <>
@@ -113,7 +120,7 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/95 backdrop-blur-xl z-[98] lg:hidden"
+              className="fixed inset-0 bg-black/80 backdrop-blur-xl z-[98] lg:hidden"
               onClick={() => setIsOpen(false)}
             />
             <motion.div
@@ -121,16 +128,20 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-[85%] max-w-sm bg-[#050505] border-l border-white/10 z-[99] lg:hidden p-6 md:p-8 flex flex-col"
+              className="fixed top-0 right-0 bottom-0 w-[85%] max-w-sm bg-[#050505] border-l border-white/10 z-[99] lg:hidden p-6 md:p-8 flex flex-col shadow-2xl"
             >
               <div className="flex justify-between items-center mb-10">
-                <span className="text-[10px] font-black tracking-[0.3em] text-white opacity-50 uppercase">System.Menu</span>
-                <button onClick={() => setIsOpen(false)} className="text-white p-2 hover:bg-white/5 rounded-full">
-                  <X size={24}/>
+                <div className="flex items-center gap-2">
+                  <Terminal size={16} className="text-blue-500" />
+                  <span className="text-[10px] font-black tracking-[0.3em] text-white opacity-50 uppercase">System.Menu</span>
+                </div>
+                <button onClick={() => setIsOpen(false)} className="text-white p-2 bg-white/5 rounded-full border border-white/10">
+                  <X size={20}/>
                 </button>
               </div>
 
-              <div className="flex flex-col gap-4">
+              {/* Nav Links Mobile */}
+              <div className="flex flex-col gap-2">
                 {navLinks.map((link, i) => (
                   <motion.a
                     key={link.name}
@@ -139,23 +150,51 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: i * 0.05 }}
                     onClick={() => setIsOpen(false)}
-                    className="text-2xl font-black text-white hover:text-blue-500 transition-colors flex items-center justify-between py-2 group"
+                    className="text-3xl font-black text-white hover:text-blue-500 transition-colors flex items-center justify-between py-3 border-b border-white/5 group"
                   >
-                    {link.name}
-                    <ArrowRight size={20} className="text-blue-500 opacity-0 group-hover:opacity-100 transition-all" />
+                    <span className="tracking-tighter uppercase">{link.name}</span>
+                    <ArrowRight size={20} className="text-blue-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                   </motion.a>
                 ))}
               </div>
 
-              <div className="mt-auto space-y-6">
-                <div className="p-4 rounded-xl bg-white/[0.03] border border-white/5 flex justify-center">
-                   <LanguageSelector />
+              {/* Seção Inferior: Seletor de Língua & CTA */}
+              <div className="mt-auto space-y-8">
+                {/* Seletor de Língua Estilo Segmented Control */}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2 px-1 text-[9px] font-mono text-gray-500 uppercase tracking-widest">
+                    <Languages size={12} />
+                    <span>Select_Language</span>
+                  </div>
+                  <div className="grid grid-cols-3 p-1.5 bg-white/[0.03] border border-white/10 rounded-2xl relative">
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => setLanguage(lang.code)}
+                        className={`relative py-3 rounded-xl text-[10px] font-black transition-all duration-300 ${
+                          language === lang.code ? 'text-black' : 'text-gray-500'
+                        }`}
+                      >
+                        {language === lang.code && (
+                          <motion.div 
+                            layoutId="activeTabMobile" 
+                            className="absolute inset-0 bg-white rounded-lg z-0"
+                            transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+                          />
+                        )}
+                        <span className="relative z-10">{lang.label}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
+
+                {/* Botão de Devis Mobile */}
                 <button 
                   onClick={() => { setIsOpen(false); onOpenForm?.(); }}
-                  className="w-full py-4 rounded-xl bg-blue-600 text-white font-black tracking-widest uppercase text-[10px]"
+                  className="w-full py-5 rounded-2xl bg-blue-600 text-white font-black tracking-[0.2em] uppercase text-[11px] shadow-[0_10px_40px_rgba(37,99,235,0.3)] flex items-center justify-center gap-3 transition-transform active:scale-95"
                 >
                   {t.navbar.cta}
+                  <ArrowRight size={16} />
                 </button>
               </div>
             </motion.div>

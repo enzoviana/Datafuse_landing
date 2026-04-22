@@ -105,16 +105,38 @@ export default function PremiumTestimonials() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="inline-flex items-center gap-6 px-8 py-4 bg-white/[0.02] border border-white/5 rounded-2xl backdrop-blur-xl"
+            className="inline-flex flex-wrap justify-center items-center gap-6 px-8 py-6 bg-white/[0.02] border border-white/5 rounded-2xl backdrop-blur-xl"
           >
             <div className="flex flex-col items-start border-r border-white/10 pr-6">
-              <span className="text-2xl font-bold text-white">4.9/5</span>
+              <span className="text-3xl font-bold text-white">4.9/5</span>
               <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">{t.testimonials.stats.rating}</span>
             </div>
-            <div className="flex flex-col items-start">
-              <span className="text-2xl font-bold text-white">50+</span>
-              <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">{t.testimonials.stats.projects}</span>
+            <div className="flex flex-col items-start border-r border-white/10 pr-6">
+              <span className="text-3xl font-bold text-white">127</span>
+              <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">projets livrés</span>
             </div>
+            <div className="flex flex-col items-start border-r border-white/10 pr-6">
+              <span className="text-3xl font-bold text-green-400">+312%</span>
+              <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">croissance moy.</span>
+            </div>
+            <div className="flex flex-col items-start">
+              <span className="text-3xl font-bold text-white">0</span>
+              <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">retard en 2024</span>
+            </div>
+          </motion.div>
+
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="mt-8"
+          >
+            <button className="px-10 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-blue-500/30">
+              Rejoignez nos clients satisfaits
+            </button>
+            <p className="text-xs text-gray-600 mt-3 font-mono">
+              Audit gratuit • Réponse sous 48h
+            </p>
           </motion.div>
         </div>
       </div>

@@ -135,16 +135,23 @@ export default function PremiumPricing() {
 
 
 
+
+
         {/* Bottom Annotation */}
-        <div className="mt-16 max-w-2xl mx-auto p-6 rounded-2xl border border-dashed border-white/10 bg-white/[0.01] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-            <div className="size-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500 shrink-0">
+        <div className="mt-12 max-w-2xl mx-auto p-8 rounded-2xl border border-dashed border-green-500/20 bg-green-500/5 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+            <div className="size-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 shrink-0">
                 <ShieldCheck size={24} />
             </div>
             <div>
-                <h4 className="text-white font-bold text-sm mb-1">{t.pricing.guarantee.title}</h4>
-                <p className="text-gray-500 text-[11px] leading-relaxed font-light">
+                <h4 className="text-white font-bold text-base mb-2">{t.pricing.guarantee.title}</h4>
+                <p className="text-gray-400 text-sm leading-relaxed font-light mb-2">
                     {t.pricing.guarantee.desc}
                 </p>
+                <div className="flex flex-wrap gap-3 text-xs text-green-400 font-mono">
+                  <span>✓ Satisfait ou remboursé</span>
+                  <span>✓ Deadline garantie</span>
+                  <span>✓ 30j maintenance</span>
+                </div>
             </div>
         </div>
       </div>

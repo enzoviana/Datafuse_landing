@@ -41,7 +41,7 @@ export default function DatafuseStudioHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-4xl sm:text-6xl md:text-8xl lg:text-[120px] font-bold tracking-tighter text-white leading-[0.9] md:leading-[0.85] pointer-events-none"
+            className="text-6xl sm:text-6xl md:text-8xl lg:text-[120px] font-bold tracking-tighter text-white leading-[0.9] md:leading-[0.85] pointer-events-none"
           >
             {t.hero.title} <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">
@@ -68,25 +68,37 @@ export default function DatafuseStudioHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-center text-gray-500 max-w-[90%] md:max-w-[600px] text-base md:text-xl font-light mb-10 md:mb-12 leading-relaxed"
+          className="text-center text-gray-500 max-w-[90%] md:max-w-[600px] text-base md:text-xl font-light mb-6 md:mb-8 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: t.hero.description }}
         />
+
+
 
         {/* CTAs - Full width sur mobile */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center mb-20 md:mb-24 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center mb-6 md:mb-8 w-full sm:w-auto"
         >
           <button className="w-full sm:w-auto h-12 md:h-14 px-8 md:px-10 rounded-full bg-blue-600 text-white text-sm md:text-base font-bold hover:bg-blue-500 hover:scale-105 active:scale-95 transition-all shadow-[0_0_30px_rgba(37,99,235,0.3)] flex items-center justify-center gap-2">
-            {t.hero.ctaPrimary}
+            Audit gratuit • 48h
             <ChevronRight size={18} />
           </button>
           <button className="w-full sm:w-auto h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/5 text-white border border-white/10 text-sm md:text-base font-bold hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-md">
-            {t.hero.ctaSecondary}
+            Voir les offres
           </button>
         </motion.div>
+
+        {/* Trust line */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="text-xs md:text-sm text-gray-600 font-mono mb-16"
+        >
+          ✓ Satisfait ou remboursé • ✓ Deadline garantie • ✓ Code 100% propriété
+        </motion.p>
 
         {/* --- PARTNERS MARQUEE --- */}
         <div className="w-full max-w-5xl mt-auto">
@@ -113,23 +125,7 @@ export default function DatafuseStudioHero() {
         </div>
       </div>
 
-      {/* Barre de Status / Trustpilot (Fixée en bas) */}
-      <div className="absolute bottom-6 left-0 right-0 px-6 flex justify-center z-20 pointer-events-none">
-        <div className="flex flex-col items-center gap-2 w-full max-w-[280px] pointer-events-auto">
-          <div className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-full border border-white/5 bg-black/40 backdrop-blur-sm w-full">
-            <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <svg key={i} className="size-2 md:size-2.5 text-green-500 fill-current" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span className="text-[7px] md:text-[8px] font-mono text-gray-400 uppercase tracking-widest">
-              Trustpilot <span className="text-white">4.9/5</span>
-            </span>
-          </div>
-        </div>
-      </div>
+
     </section>
   )
 }
