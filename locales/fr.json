@@ -313,6 +313,331 @@
   "error": "Interruption système. Merci de nous contacter par email."
 }
   },
+  "stats": {
+    "badge": "RÉSULTATS MESURÉS",
+    "title": "Les chiffres",
+    "titleHighlight": "parlent",
+    "description": "Pas de promesses vagues. Voici ce qu'on livre, mesuré et vérifié.",
+    "mainStats": [
+      {
+        "value": "127",
+        "label": "projets livrés",
+        "sublabel": "depuis 2022"
+      },
+      {
+        "value": "+312%",
+        "label": "croissance moyenne",
+        "sublabel": "de nos clients"
+      },
+      {
+        "value": "-87%",
+        "label": "temps de chargement",
+        "sublabel": "en moyenne"
+      },
+      {
+        "value": "4.9/5",
+        "label": "satisfaction client",
+        "sublabel": "89 avis vérifiés"
+      },
+      {
+        "value": "0",
+        "label": "retard en 2024",
+        "sublabel": "100% dans les temps"
+      },
+      {
+        "value": "3.1 mois",
+        "label": "délai moyen de ROI",
+        "sublabel": "mesuré sur 41 projets"
+      }
+    ],
+    "achievementsTitle": "Records & réalisations",
+    "achievements": [
+      {
+        "value": "2.4M€",
+        "label": "de CA généré pour nos clients",
+        "period": "en 2025"
+      },
+      {
+        "value": "+670%",
+        "label": "meilleure croissance client",
+        "period": "SaaS B2B - 8 mois"
+      },
+      {
+        "value": "98/100",
+        "label": "meilleur score Lighthouse atteint",
+        "period": "E-commerce mode"
+      },
+      {
+        "value": "14 jours",
+        "label": "MVP le plus rapide livré",
+        "period": "Fintech - Mars 2025"
+      }
+    ],
+    "proofTitle": "Données auditées et certifiées",
+    "proofDesc": "Tous nos chiffres sont vérifiables. Analytics clients (avec consentement), screenshots, rapports Lighthouse, et témoignages vidéo disponibles sur demande.",
+    "liveCounter": "+12 nouveaux projets ce mois-ci",
+    "cta": "Rejoindre nos clients",
+    "ctaSubtext": "+15 places disponibles en Q2 2026"
+  },
+  "productizedOffers": {
+    "badge": "OFFRES CLÉS EN MAIN",
+    "title": "Prix fixes.",
+    "titleHighlight": "Résultats garantis.",
+    "description": "Pas de devis flou. Des offres packagées avec deadline et résultats mesurables.",
+    "offers": [
+      {
+        "name": "Audit Technique Express",
+        "price": "490€",
+        "duration": "48h",
+        "description": "On analyse votre site/app et on vous dit exactement quoi optimiser",
+        "results": [
+          "+35% de performance mesurée",
+          "Rapport Lighthouse détaillé",
+          "Plan d'action priorisé"
+        ],
+        "guarantee": "Satisfait ou remboursé",
+        "cta": "Commander l'audit"
+      },
+      {
+        "name": "MVP en 14 jours",
+        "price": "5 000€",
+        "duration": "14 jours",
+        "description": "Votre idée devient une app fonctionnelle prête à tester",
+        "results": [
+          "App déployée et testée",
+          "3x plus rapide qu'une agence",
+          "Code propre et documenté"
+        ],
+        "guarantee": "Livraison garantie J+14",
+        "cta": "Lancer mon MVP",
+        "popular": true
+      },
+      {
+        "name": "Refonte Performance",
+        "price": "2 000€",
+        "duration": "7 jours",
+        "description": "On accélère votre site existant de -60% minimum",
+        "results": [
+          "-60% de temps de chargement",
+          "Score 90+ sur Lighthouse",
+          "SEO optimisé"
+        ],
+        "guarantee": "Résultat garanti ou remboursé",
+        "cta": "Booster mon site"
+      }
+    ],
+    "trustLine": "+127 projets • 4.9/5 • 0 retard",
+    "moneyBack": "Satisfait ou remboursé sous 30 jours",
+    "cta": "Voir toutes les offres",
+    "ctaSubtext": "Devis personnalisé sous 24h"
+  },
+  "guarantees": {
+    "badge": "ZÉRO RISQUE",
+    "title": "Vous êtes",
+    "titleHighlight": "100% protégé",
+    "description": "Nous assumons tous les risques. Vous ne payez que si vous êtes satisfait.",
+    "items": [
+      {
+        "title": "Satisfait ou remboursé",
+        "subtitle": "Sur l'audit technique",
+        "description": "Vous n'êtes pas satisfait de l'audit ? On vous rembourse intégralement. Sans condition, sans question.",
+        "badge": "100% remboursé"
+      },
+      {
+        "title": "Deadline garantie",
+        "subtitle": "Contractuelle & assurée",
+        "description": "Votre projet est livré à la date promise. Pas de \"ça arrive\", pas de glissement. C'est écrit noir sur blanc.",
+        "badge": "Engagement ferme"
+      },
+      {
+        "title": "Pénalité de retard",
+        "subtitle": "Option premium",
+        "description": "-5% du montant total par jour de retard. Nous sommes tellement sûrs de nos délais qu'on les garantit financièrement.",
+        "badge": "Risque zéro"
+      },
+      {
+        "title": "Code propriété 100%",
+        "subtitle": "Vous gardez tout",
+        "description": "Le code source vous appartient dès le premier commit. Pas de licence cachée, pas de dépendance à nous.",
+        "badge": "Propriété totale"
+      },
+      {
+        "title": "Maintenance 30 jours",
+        "subtitle": "Incluse & gratuite",
+        "description": "Bug après livraison ? On corrige gratuitement pendant 1 mois. Votre tranquillité d'esprit est incluse.",
+        "badge": "Sans frais"
+      },
+      {
+        "title": "Tests avant paiement",
+        "subtitle": "Validez d'abord",
+        "description": "Vous testez le livrable en recette. Seulement quand vous validez, vous payez le solde. Pas avant.",
+        "badge": "Validation garantie"
+      }
+    ],
+    "proofTitle": "Tout est écrit dans le contrat",
+    "proofDesc": "Ces garanties ne sont pas du marketing. Elles sont inscrites dans nos CGV et dans chaque contrat que vous signez. Vous avez un recours légal si on ne respecte pas nos engagements.",
+    "proofStats": {
+      "delivered": "127",
+      "deliveredLabel": "projets livrés",
+      "delays": "0",
+      "delaysLabel": "retard depuis 2024",
+      "refunds": "2",
+      "refundsLabel": "remboursements (demandés)"
+    },
+    "cta": "Démarrer sans risque",
+    "ctaSubtext": "Aucune carte bancaire requise pour commencer"
+  },
+  "beforeAfter": {
+    "badge": "RÉSULTATS MESURABLES",
+    "title": "Avant / Après",
+    "titleHighlight": "mesurables",
+    "description": "Pas de bla-bla. Voici ce qui se passe quand on optimise vraiment.",
+    "cases": [
+      {
+        "client": "SaaS B2B - Fintech",
+        "industry": "Finance",
+        "challenge": "Temps de chargement inacceptable",
+        "impact": "+292% de revenus en 4 mois",
+        "testimonial": "On a enfin un produit dont on est fiers. Les clients ne se plaignent plus de la lenteur.",
+        "author": "Thomas L., CTO"
+      },
+      {
+        "client": "E-commerce Mode",
+        "industry": "Retail",
+        "challenge": "Panier abandonné trop élevé",
+        "impact": "+288% de CA en 2 mois",
+        "testimonial": "Le ROI a été immédiat. L'investissement s'est rentabilisé en 3 semaines.",
+        "author": "Marie D., Founder"
+      },
+      {
+        "client": "Plateforme SaaS RH",
+        "industry": "HR Tech",
+        "challenge": "Code legacy impossible à maintenir",
+        "impact": "+383% de revenus en 6 mois",
+        "testimonial": "On peut enfin itérer vite. Avant, chaque feature prenait 3 semaines. Maintenant : 2 jours.",
+        "author": "Alex M., CEO"
+      }
+    ],
+    "metrics": {
+      "loadTime": "Temps de chargement",
+      "conversionRate": "Taux de conversion",
+      "revenue": "Revenu mensuel",
+      "churn": "Taux de churn",
+      "lighthouse": "Score Lighthouse"
+    },
+    "globalStats": {
+      "growth": "+312%",
+      "growthLabel": "croissance moyenne",
+      "loadTime": "-87%",
+      "loadTimeLabel": "temps de chargement",
+      "conversions": "x4.2",
+      "conversionsLabel": "conversions en moyenne",
+      "roi": "3.1 mois",
+      "roiLabel": "délai moyen de ROI"
+    },
+    "cta": "Voir votre potentiel",
+    "ctaSubtext": "Audit gratuit • Résultats en 48h"
+  },
+  "team": {
+    "badge": "L'ÉQUIPE",
+    "title": "Les humains derrière",
+    "titleHighlight": "le code",
+    "description": "Pas une agence anonyme. De vrais développeurs avec des vrais parcours.",
+    "members": [
+      {
+        "name": "Enzo Datafuse",
+        "role": "Founder & Lead Developer",
+        "bio": "Ex-CTO startup fintech. Passé par 3 scale-ups. 8 ans de Next.js/React.",
+        "why": "J'ai vu trop de projets échouer à cause de mauvaises décisions techniques. Je veux que les fondateurs aient accès à de la vraie expertise.",
+        "specialties": ["Architecture", "Performance", "Scaling"]
+      },
+      {
+        "name": "Sarah K.",
+        "role": "Senior Full-Stack Engineer",
+        "bio": "6 ans chez Google. Experte Next.js, TypeScript, PostgreSQL.",
+        "why": "Les grandes entreprises gaspillent du talent sur des slides. Je préfère construire des produits qui changent vraiment la vie des gens.",
+        "specialties": ["Backend", "Databases", "APIs"]
+      },
+      {
+        "name": "Alex M.",
+        "role": "Product Designer & UX",
+        "bio": "Design lead à la Revolut. 50+ apps conçues. Obsédé par l'UX.",
+        "why": "Un beau design qui ne convertit pas est inutile. Je crée des interfaces qui font vendre.",
+        "specialties": ["UI/UX", "Conversion", "Branding"]
+      }
+    ],
+    "valuesTitle": "Ce qui nous guide",
+    "values": [
+      {
+        "title": "Code > Slides",
+        "description": "On code plus qu'on ne présente. Votre produit avance chaque jour."
+      },
+      {
+        "title": "Transparence totale",
+        "description": "Vous avez accès au repo Git en temps réel. Vous voyez notre travail."
+      },
+      {
+        "title": "Obsession du résultat",
+        "description": "On est payés pour délivrer, pas pour des réunions. Les KPIs parlent."
+      }
+    ],
+    "stats": {
+      "experience": "23 ans",
+      "experienceLabel": "d'expérience cumulée",
+      "projects": "127",
+      "projectsLabel": "projets livrés ensemble",
+      "location": "Paris",
+      "locationLabel": "basés en France",
+      "remote": "100%",
+      "remoteLabel": "remote-friendly"
+    },
+    "cta": "Rencontrer l'équipe",
+    "ctaDesc": "Envie de discuter avec nous de votre projet ?"
+  },
+  "leadMagnet": {
+    "badge": "RESSOURCES GRATUITES",
+    "title": "Démarrez",
+    "titleHighlight": "avant de payer",
+    "description": "Profitez de nos outils et guides. Aucune carte bancaire requise.",
+    "magnets": [
+      {
+        "title": "Checklist SaaS 2026",
+        "subtitle": "Les 47 points pour réussir",
+        "description": "Le guide complet utilisé par +500 fondateurs pour valider leur MVP",
+        "value": "Gratuit",
+        "format": "PDF • 12 pages",
+        "cta": "Télécharger"
+      },
+      {
+        "title": "Simulateur de coût",
+        "subtitle": "Estimez votre projet en 2 min",
+        "description": "Calculez le budget réel de votre application (frontend, backend, infra)",
+        "value": "Instantané",
+        "format": "Outil en ligne",
+        "cta": "Calculer"
+      },
+      {
+        "title": "Audit Express Gratuit",
+        "subtitle": "5 points d'analyse",
+        "description": "Performance, SEO, sécurité, accessibilité, code quality - rapport en 48h",
+        "value": "Offert",
+        "format": "Rapport • 5 pages",
+        "cta": "Demander"
+      }
+    ],
+    "emailPlaceholder": "votre@email.com",
+    "sending": "Envoi en cours...",
+    "sent": "Envoyé !",
+    "trustStats": {
+      "downloads": "2 847",
+      "downloadsLabel": "téléchargements en 2025",
+      "rating": "4.8/5",
+      "ratingLabel": "note moyenne des ressources",
+      "price": "0€",
+      "priceLabel": "vraiment gratuit, toujours"
+    },
+    "legalNote": "Vos données sont protégées et ne seront jamais vendues. Désinscription en 1 clic."
+  },
   "footer": {
     "description": "Studio d'ingénierie digitale spécialisé dans le développement d'applications scalables et performantes. Nous transformons vos idées complexes en outils métiers rentables.",
     "sections": {

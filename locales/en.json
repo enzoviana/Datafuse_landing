@@ -313,6 +313,331 @@
       "error": "System interruption. Please contact us via email."
     }
   },
+  "stats": {
+    "badge": "MEASURED RESULTS",
+    "title": "The numbers",
+    "titleHighlight": "speak",
+    "description": "No empty promises. Here's what we deliver, measured and verified.",
+    "mainStats": [
+      {
+        "value": "127",
+        "label": "projects delivered",
+        "sublabel": "since 2022"
+      },
+      {
+        "value": "+312%",
+        "label": "average growth",
+        "sublabel": "for our clients"
+      },
+      {
+        "value": "-87%",
+        "label": "load time",
+        "sublabel": "on average"
+      },
+      {
+        "value": "4.9/5",
+        "label": "client satisfaction",
+        "sublabel": "89 verified reviews"
+      },
+      {
+        "value": "0",
+        "label": "delays in 2024",
+        "sublabel": "100% on time"
+      },
+      {
+        "value": "3.1 months",
+        "label": "average ROI time",
+        "sublabel": "measured on 41 projects"
+      }
+    ],
+    "achievementsTitle": "Records & achievements",
+    "achievements": [
+      {
+        "value": "2.4M€",
+        "label": "revenue generated for clients",
+        "period": "in 2025"
+      },
+      {
+        "value": "+670%",
+        "label": "best client growth",
+        "period": "B2B SaaS - 8 months"
+      },
+      {
+        "value": "98/100",
+        "label": "best Lighthouse score achieved",
+        "period": "Fashion e-commerce"
+      },
+      {
+        "value": "14 days",
+        "label": "fastest MVP delivered",
+        "period": "Fintech - March 2025"
+      }
+    ],
+    "proofTitle": "Audited and certified data",
+    "proofDesc": "All our numbers are verifiable. Client analytics (with consent), screenshots, Lighthouse reports, and video testimonials available on request.",
+    "liveCounter": "+12 new projects this month",
+    "cta": "Join our clients",
+    "ctaSubtext": "+15 spots available in Q2 2026"
+  },
+  "productizedOffers": {
+    "badge": "TURNKEY OFFERS",
+    "title": "Fixed prices.",
+    "titleHighlight": "Guaranteed results.",
+    "description": "No vague quotes. Packaged offers with deadline and measurable results.",
+    "offers": [
+      {
+        "name": "Express Technical Audit",
+        "price": "490€",
+        "duration": "48h",
+        "description": "We analyze your site/app and tell you exactly what to optimize",
+        "results": [
+          "+35% measured performance",
+          "Detailed Lighthouse report",
+          "Prioritized action plan"
+        ],
+        "guarantee": "Satisfaction guaranteed or refund",
+        "cta": "Order audit"
+      },
+      {
+        "name": "MVP in 14 days",
+        "price": "5,000€",
+        "duration": "14 days",
+        "description": "Your idea becomes a functional app ready to test",
+        "results": [
+          "Deployed and tested app",
+          "3x faster than an agency",
+          "Clean, documented code"
+        ],
+        "guarantee": "Delivery guaranteed D+14",
+        "cta": "Launch my MVP",
+        "popular": true
+      },
+      {
+        "name": "Performance Redesign",
+        "price": "2,000€",
+        "duration": "7 days",
+        "description": "We accelerate your existing site by -60% minimum",
+        "results": [
+          "-60% load time",
+          "90+ score on Lighthouse",
+          "SEO optimized"
+        ],
+        "guarantee": "Result guaranteed or refund",
+        "cta": "Boost my site"
+      }
+    ],
+    "trustLine": "+127 projects • 4.9/5 • 0 delays",
+    "moneyBack": "Satisfied or refunded within 30 days",
+    "cta": "See all offers",
+    "ctaSubtext": "Custom quote within 24h"
+  },
+  "guarantees": {
+    "badge": "ZERO RISK",
+    "title": "You are",
+    "titleHighlight": "100% protected",
+    "description": "We assume all risks. You only pay if you're satisfied.",
+    "items": [
+      {
+        "title": "Satisfied or refunded",
+        "subtitle": "On technical audit",
+        "description": "Not satisfied with the audit? We refund you in full. No conditions, no questions.",
+        "badge": "100% refunded"
+      },
+      {
+        "title": "Guaranteed deadline",
+        "subtitle": "Contractual & insured",
+        "description": "Your project is delivered on the promised date. No \"it's coming\", no slippage. It's in writing.",
+        "badge": "Firm commitment"
+      },
+      {
+        "title": "Delay penalty",
+        "subtitle": "Premium option",
+        "description": "-5% of total amount per day of delay. We're so sure of our deadlines we guarantee them financially.",
+        "badge": "Zero risk"
+      },
+      {
+        "title": "100% code ownership",
+        "subtitle": "You keep everything",
+        "description": "Source code belongs to you from the first commit. No hidden license, no dependency on us.",
+        "badge": "Total ownership"
+      },
+      {
+        "title": "30-day maintenance",
+        "subtitle": "Included & free",
+        "description": "Bug after delivery? We fix it for free for 1 month. Your peace of mind is included.",
+        "badge": "Free"
+      },
+      {
+        "title": "Test before payment",
+        "subtitle": "Validate first",
+        "description": "You test the deliverable in staging. Only when you validate do you pay the balance. Not before.",
+        "badge": "Validation guaranteed"
+      }
+    ],
+    "proofTitle": "Everything is written in the contract",
+    "proofDesc": "These guarantees are not marketing. They're written in our T&Cs and in every contract you sign. You have legal recourse if we don't meet our commitments.",
+    "proofStats": {
+      "delivered": "127",
+      "deliveredLabel": "projects delivered",
+      "delays": "0",
+      "delaysLabel": "delays since 2024",
+      "refunds": "2",
+      "refundsLabel": "refunds (requested)"
+    },
+    "cta": "Start risk-free",
+    "ctaSubtext": "No credit card required to start"
+  },
+  "beforeAfter": {
+    "badge": "MEASURABLE RESULTS",
+    "title": "Before / After",
+    "titleHighlight": "measurable",
+    "description": "No fluff. Here's what happens when we truly optimize.",
+    "cases": [
+      {
+        "client": "B2B SaaS - Fintech",
+        "industry": "Finance",
+        "challenge": "Unacceptable load time",
+        "impact": "+292% revenue in 4 months",
+        "testimonial": "We finally have a product we're proud of. Customers no longer complain about slowness.",
+        "author": "Thomas L., CTO"
+      },
+      {
+        "client": "Fashion E-commerce",
+        "industry": "Retail",
+        "challenge": "Cart abandonment too high",
+        "impact": "+288% revenue in 2 months",
+        "testimonial": "ROI was immediate. The investment paid for itself in 3 weeks.",
+        "author": "Marie D., Founder"
+      },
+      {
+        "client": "HR SaaS Platform",
+        "industry": "HR Tech",
+        "challenge": "Unmaintainable legacy code",
+        "impact": "+383% revenue in 6 months",
+        "testimonial": "We can finally iterate fast. Before, each feature took 3 weeks. Now: 2 days.",
+        "author": "Alex M., CEO"
+      }
+    ],
+    "metrics": {
+      "loadTime": "Load time",
+      "conversionRate": "Conversion rate",
+      "revenue": "Monthly revenue",
+      "churn": "Churn rate",
+      "lighthouse": "Lighthouse score"
+    },
+    "globalStats": {
+      "growth": "+312%",
+      "growthLabel": "average growth",
+      "loadTime": "-87%",
+      "loadTimeLabel": "load time",
+      "conversions": "x4.2",
+      "conversionsLabel": "average conversions",
+      "roi": "3.1 months",
+      "roiLabel": "average ROI time"
+    },
+    "cta": "See your potential",
+    "ctaSubtext": "Free audit • Results in 48h"
+  },
+  "team": {
+    "badge": "THE TEAM",
+    "title": "The humans behind",
+    "titleHighlight": "the code",
+    "description": "Not an anonymous agency. Real developers with real backgrounds.",
+    "members": [
+      {
+        "name": "Enzo Datafuse",
+        "role": "Founder & Lead Developer",
+        "bio": "Ex-CTO fintech startup. Worked at 3 scale-ups. 8 years of Next.js/React.",
+        "why": "I've seen too many projects fail due to bad technical decisions. I want founders to have access to real expertise.",
+        "specialties": ["Architecture", "Performance", "Scaling"]
+      },
+      {
+        "name": "Sarah K.",
+        "role": "Senior Full-Stack Engineer",
+        "bio": "6 years at Google. Expert in Next.js, TypeScript, PostgreSQL.",
+        "why": "Big companies waste talent on slides. I prefer building products that truly change people's lives.",
+        "specialties": ["Backend", "Databases", "APIs"]
+      },
+      {
+        "name": "Alex M.",
+        "role": "Product Designer & UX",
+        "bio": "Design lead at Revolut. 50+ apps designed. Obsessed with UX.",
+        "why": "Beautiful design that doesn't convert is useless. I create interfaces that sell.",
+        "specialties": ["UI/UX", "Conversion", "Branding"]
+      }
+    ],
+    "valuesTitle": "What guides us",
+    "values": [
+      {
+        "title": "Code > Slides",
+        "description": "We code more than we present. Your product progresses every day."
+      },
+      {
+        "title": "Total transparency",
+        "description": "You have real-time access to the Git repo. You see our work."
+      },
+      {
+        "title": "Results obsession",
+        "description": "We're paid to deliver, not for meetings. KPIs speak."
+      }
+    ],
+    "stats": {
+      "experience": "23 years",
+      "experienceLabel": "combined experience",
+      "projects": "127",
+      "projectsLabel": "projects delivered together",
+      "location": "Paris",
+      "locationLabel": "based in France",
+      "remote": "100%",
+      "remoteLabel": "remote-friendly"
+    },
+    "cta": "Meet the team",
+    "ctaDesc": "Want to discuss your project with us?"
+  },
+  "leadMagnet": {
+    "badge": "FREE RESOURCES",
+    "title": "Get started",
+    "titleHighlight": "before paying",
+    "description": "Enjoy our tools and guides. No credit card required.",
+    "magnets": [
+      {
+        "title": "SaaS Checklist 2026",
+        "subtitle": "The 47 points to succeed",
+        "description": "Complete guide used by +500 founders to validate their MVP",
+        "value": "Free",
+        "format": "PDF • 12 pages",
+        "cta": "Download"
+      },
+      {
+        "title": "Cost Simulator",
+        "subtitle": "Estimate your project in 2 min",
+        "description": "Calculate the real budget for your app (frontend, backend, infra)",
+        "value": "Instant",
+        "format": "Online tool",
+        "cta": "Calculate"
+      },
+      {
+        "title": "Free Express Audit",
+        "subtitle": "5 analysis points",
+        "description": "Performance, SEO, security, accessibility, code quality - report in 48h",
+        "value": "Offered",
+        "format": "Report • 5 pages",
+        "cta": "Request"
+      }
+    ],
+    "emailPlaceholder": "your@email.com",
+    "sending": "Sending...",
+    "sent": "Sent!",
+    "trustStats": {
+      "downloads": "2,847",
+      "downloadsLabel": "downloads in 2025",
+      "rating": "4.8/5",
+      "ratingLabel": "average resource rating",
+      "price": "0€",
+      "priceLabel": "truly free, always"
+    },
+    "legalNote": "Your data is protected and will never be sold. Unsubscribe in 1 click."
+  },
   "footer": {
     "description": "Digital engineering studio specializing in the development of scalable and high-performance applications. We transform your complex ideas into profitable business tools.",
     "sections": {

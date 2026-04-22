@@ -2,59 +2,28 @@
 
 import { motion } from 'framer-motion'
 import { TrendingUp, Users, Zap, Award, Clock, Target, ArrowUpRight, BarChart3 } from 'lucide-react'
+import { useTranslation } from '@/contexts/LanguageContext'
 
-const stats = [
-  {
-    icon: Users,
-    value: '127',
-    label: 'projets livrés',
-    sublabel: 'Expertise prouvée',
-    trend: 'Depuis 2022',
-    color: 'blue'
-  },
-  {
-    icon: TrendingUp,
-    value: '+312%',
-    label: 'croissance moyenne',
-    sublabel: 'Impact business',
-    trend: 'Mesuré sur 24 mois',
-    color: 'green'
-  },
-  {
-    icon: Zap,
-    value: '-87%',
-    label: 'temps de chargement',
-    sublabel: 'Performance technique',
-    trend: 'Score Lighthouse',
-    color: 'blue'
-  },
-  {
-    icon: Target,
-    value: '3.1 mois',
-    label: 'délai moyen de ROI',
-    sublabel: 'Rentabilité rapide',
-    trend: '41 projets audités',
-    color: 'green'
-  },
-  {
-    icon: Award,
-    value: '4.9/5',
-    label: 'satisfaction client',
-    sublabel: 'Qualité de code',
-    trend: '89 avis vérifiés',
-    color: 'blue'
-  },
-  {
-    icon: Clock,
-    value: '100%',
-    label: 'respect des délais',
-    sublabel: 'Zéro retard',
-    trend: 'Bilan annuel 2024',
-    color: 'green'
-  }
-]
+const iconMap = {
+  Users,
+  TrendingUp,
+  Zap,
+  Target,
+  Award,
+  Clock
+}
 
 export default function PremiumStats() {
+  const { t } = useTranslation()
+
+  const stats = t.stats.mainStats.map((stat: any, idx: number) => ({
+    icon: Object.values(iconMap)[idx],
+    value: stat.value,
+    label: stat.label,
+    sublabel: stat.sublabel,
+    trend: stat.sublabel,
+    color: idx % 2 === 0 ? 'blue' : 'green'
+  }))
   return (
     <section className="py-24 bg-[#030303] relative overflow-hidden">
       {/* Background Glows - Aligned with Hero */}
@@ -69,23 +38,22 @@ export default function PremiumStats() {
           className="mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-[10px] font-mono text-blue-400 tracking-[0.2em] mb-6 uppercase">
-            AUDIT & PERFORMANCE
+            {t.stats.badge}
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter">
-                Les chiffres <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-blue-600">parlent.</span>
+                {t.stats.title} <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-blue-600">{t.stats.titleHighlight}</span>
               </h2>
               <p className="text-lg text-gray-400 mt-4 max-w-xl font-light">
-                Derrière chaque ligne de code, il y a un objectif de rentabilité. 
-                Voici les standards que nous appliquons à chaque projet.
+                {t.stats.description}
               </p>
             </div>
             <div className="hidden md:block">
               <div className="flex items-center gap-4 px-6 py-4 bg-white/[0.03] border border-white/10 rounded-2xl">
                 <BarChart3 className="text-blue-500" size={24} />
                 <div>
-                  <div className="text-white font-bold text-sm">Données certifiées</div>
+                  <div className="text-white font-bold text-sm">{t.stats.proofTitle}</div>
                   <div className="text-gray-500 text-xs font-mono">MAJ : Avril 2026</div>
                 </div>
               </div>
@@ -138,15 +106,11 @@ export default function PremiumStats() {
 
         {/* Records section - Cleaned up to match Hero footer */}
         <div className="mt-16 grid md:grid-cols-4 gap-8 py-12 border-y border-white/5 bg-white/[0.01]">
-          {[
-            { label: 'CA Généré 2025', val: '2.4M€' },
-            { label: 'Meilleur ROI', val: '+670%' },
-            { label: 'Lighthouse Record', val: '98/100' },
-            { label: 'MVP Delivery', val: '14 jours' },
-          ].map((item) => (
+          {t.stats.achievements.map((item: any) => (
             <div key={item.label} className="text-center md:text-left px-4">
-              <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-2">{item.label}</div>
-              <div className="text-2xl font-bold text-white">{item.val}</div>
+              <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-2">{item.period}</div>
+              <div className="text-2xl font-bold text-white">{item.value}</div>
+              <div className="text-xs text-gray-400 mt-1">{item.label}</div>
             </div>
           ))}
         </div>
@@ -160,13 +124,13 @@ export default function PremiumStats() {
             </div>
             
             <button className="group relative px-10 py-5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-xl shadow-blue-500/20">
-                <span className="relative z-10 flex items-center gap-2">
-                    REJOINDRE LE TOP 1% CLIENTS
+                <span className="relative z-10 flex items-center gap-2 uppercase">
+                    {t.stats.cta}
                     <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </span>
             </button>
             <p className="mt-4 text-[10px] font-mono text-gray-600 uppercase tracking-[0.3em]">
-                +15 places disponibles • Q2 2026
+                {t.stats.ctaSubtext}
             </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function PremiumChatbot() {
     {
       id: '1',
       type: 'bot',
-      content: 'Bonjour! 👋 Je suis votre assistant virtuel. Comment puis-je vous aider aujourd\'hui?',
+      content: 'Bonjour! 👋 Je suis l\'assistant DataFuse, propulsé par IA.\n\nJe peux vous aider à:\n• Découvrir nos services (Sites web, MVP, Apps)\n• Répondre à vos questions techniques\n• Estimer votre projet\n• Prendre rendez-vous avec notre équipe\n\nComment puis-je vous aider aujourd\'hui?',
       timestamp: new Date(),
     },
   ])
@@ -62,77 +62,66 @@ export default function PremiumChatbot() {
   }
 
   const getBotResponse = async (userMessage: string): Promise<string> => {
-    const lowerMessage = userMessage.toLowerCase()
+    try {
+      // Appeler l'API du chatbot avec GPT-4
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: messages.map(msg => ({
+            type: msg.type,
+            content: msg.content,
+          })),
+          leadData,
+        }),
+      })
 
-    switch (conversationStage) {
-      case 'greeting':
-        if (lowerMessage.includes('site') || lowerMessage.includes('web')) {
-          setLeadData(prev => ({ ...prev, service: 'Site Web' }))
-          setConversationStage('budget')
-          return 'Parfait! Un site web professionnel. Notre offre démarre à 2000€ HT. Quel est votre budget approximatif?'
-        } else if (lowerMessage.includes('app') || lowerMessage.includes('application') || lowerMessage.includes('mobile')) {
-          setLeadData(prev => ({ ...prev, service: 'Application Mobile & Web' }))
-          setConversationStage('budget')
-          return 'Super! Applications mobile et web à partir de 7500€ HT. Quel budget avez-vous prévu?'
-        } else if (lowerMessage.includes('mvp')) {
-          setLeadData(prev => ({ ...prev, service: 'MVP Express' }))
-          setConversationStage('budget')
-          return 'Excellent choix! Notre MVP Express livré en 2 semaines est à 4500€ HT. Cela correspond à votre budget?'
-        } else {
-          setConversationStage('service')
-          return 'Je peux vous aider avec:\n• Sites web professionnels (à partir de 2000€)\n• MVP Express en 2 semaines (4500€)\n• Applications mobile & web (à partir de 7500€)\n\nQuel type de projet vous intéresse?'
+      if (!response.ok) {
+        throw new Error('Failed to get response from AI')
+      }
+
+      const data = await response.json()
+
+      // Détecter et extraire l'email du message utilisateur
+      const emailMatch = userMessage.match(/[\w.-]+@[\w.-]+\.\w+/)
+
+      // Extraire le nom si présent (basique)
+      const nameMatch = userMessage.match(/je m'appelle ([A-ZÀ-ÿa-z\-\s]+)|mon nom est ([A-ZÀ-ÿa-z\-\s]+)|nom[:\s]+([A-ZÀ-ÿa-z\-\s]+)/i)
+      const extractedName = nameMatch ? (nameMatch[1] || nameMatch[2] || nameMatch[3])?.trim() : null
+
+      // Mettre à jour les données du lead
+      if (emailMatch) {
+        setLeadData(prev => ({ ...prev, email: emailMatch[0] }))
+      }
+      if (extractedName) {
+        setLeadData(prev => ({ ...prev, name: extractedName }))
+      }
+
+      // Sauvegarder le lead si email collecté
+      if (emailMatch && conversationStage !== 'complete') {
+        setConversationStage('complete')
+
+        try {
+          await fetch('/api/leads', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              ...leadData,
+              email: emailMatch[0],
+              name: extractedName || leadData.name,
+              source: 'chatbot-ai',
+              message: `Conversation via chatbot IA. Dernier message: ${userMessage}`,
+            }),
+          })
+        } catch (error) {
+          console.error('Error saving lead:', error)
         }
+      }
 
-      case 'service':
-        if (lowerMessage.includes('site') || lowerMessage.includes('web') || lowerMessage.includes('1')) {
-          setLeadData(prev => ({ ...prev, service: 'Site Web' }))
-          setConversationStage('budget')
-          return 'Parfait! Site web à partir de 2000€ HT. Quel est votre budget?'
-        } else if (lowerMessage.includes('mvp') || lowerMessage.includes('2')) {
-          setLeadData(prev => ({ ...prev, service: 'MVP Express' }))
-          setConversationStage('budget')
-          return 'Excellent! MVP Express à 4500€ HT, livré en 2 semaines. Confirmez-vous ce budget?'
-        } else if (lowerMessage.includes('app') || lowerMessage.includes('mobile') || lowerMessage.includes('3')) {
-          setLeadData(prev => ({ ...prev, service: 'Application Mobile & Web' }))
-          setConversationStage('budget')
-          return 'Super! Applications à partir de 7500€ HT. Quel budget avez-vous prévu?'
-        }
-        return 'Pouvez-vous choisir parmi:\n1. Site web\n2. MVP Express\n3. Application mobile & web'
-
-      case 'budget':
-        setLeadData(prev => ({ ...prev, budget: userMessage }))
-        setConversationStage('contact')
-        return 'Parfait! Pour vous proposer un devis personnalisé, puis-je avoir votre nom et email?'
-
-      case 'contact':
-        const emailMatch = userMessage.match(/[\w.-]+@[\w.-]+\.\w+/)
-        if (emailMatch) {
-          setLeadData(prev => ({ ...prev, email: emailMatch[0] }))
-          setConversationStage('complete')
-
-          try {
-            await fetch('/api/leads', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                ...leadData,
-                email: emailMatch[0],
-                source: 'chatbot',
-              }),
-            })
-          } catch (error) {
-            console.error('Error saving lead:', error)
-          }
-
-          return `Merci beaucoup! 🎉\n\n✅ Service: ${leadData.service}\n✅ Budget: ${leadData.budget}\n✅ Email: ${emailMatch[0]}\n\nUn de nos experts va vous contacter sous 24h pour discuter de votre projet en détail!`
-        }
-        return 'Je n\'ai pas détecté d\'email valide. Pouvez-vous me donner votre adresse email? (ex: nom@example.com)'
-
-      case 'complete':
-        return 'Votre demande est déjà enregistrée! Un expert va vous recontacter bientôt. Y a-t-il autre chose que je puisse faire pour vous?'
-
-      default:
-        return 'Comment puis-je vous aider?'
+      return data.message
+    } catch (error) {
+      console.error('Error getting bot response:', error)
+      return 'Désolé, je rencontre un problème technique. Pouvez-vous réessayer dans quelques instants ou nous contacter directement par email ?'
     }
   }
 
