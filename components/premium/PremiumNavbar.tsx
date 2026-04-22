@@ -30,7 +30,7 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
   ]
 
   // Configuração das línguas para o seletor mobile
-  const languages = [
+  const languages: Array<{ code: 'fr' | 'en' | 'pt'; label: string }> = [
     { code: 'fr', label: 'FR' },
     { code: 'pt', label: 'PT' },
     { code: 'en', label: 'EN' }
