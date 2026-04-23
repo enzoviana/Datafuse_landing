@@ -47,7 +47,7 @@ export default function DatafuseStudioHero() {
               duration: isMobile ? 0.3 : 0.8,
               ease: isMobile ? "easeOut" : [0.16, 1, 0.3, 1]
             }}
-            className="text-6xl sm:text-6xl md:text-8xl lg:text-[120px] font-bold tracking-tighter text-white leading-[0.9] md:leading-[0.85] pointer-events-none"
+            className="text-5xl sm:text-6xl md:text-8xl lg:text-[120px] font-bold tracking-tighter text-white leading-[0.9] md:leading-[0.85] pointer-events-none"
           >
             {t.hero.title} <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">
