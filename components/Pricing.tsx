@@ -146,7 +146,7 @@ export default function Pricing() {
 
 
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0 }} 
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="mt-12 text-center text-gray-600"
