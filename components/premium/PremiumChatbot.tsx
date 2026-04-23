@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, X, Send, Bot, User } from 'lucide-react'
+import { useReducedMotion } from '@/lib/useReducedMotion'
 
 interface Message {
   id: string
@@ -20,6 +21,7 @@ interface LeadData {
 }
 
 export default function PremiumChatbot() {
+  const { isMobile } = useReducedMotion()
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
     {

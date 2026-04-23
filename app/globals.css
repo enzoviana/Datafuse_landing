@@ -69,6 +69,58 @@ html {
   background-size: 40px 40px;
 }
 
+/* Optimisations pour les performances mobile */
+@media (max-width: 768px) {
+  /* Réduire la complexité des animations sur mobile */
+  * {
+    animation-duration: 0.3s !important;
+    transition-duration: 0.3s !important;
+  }
+
+  /* Désactiver les animations complexes sur mobile */
+  .animate-bounce,
+  .animate-spin,
+  .animate-ping {
+    animation: none !important;
+  }
+
+  /* Optimiser le scroll sur mobile */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Améliorer les performances de rendu */
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+/* Optimisations pour tous les appareils */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Optimiser les animations Framer Motion */
+[data-framer-motion] {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Améliorer les performances des images */
+img {
+  content-visibility: auto;
+}
+
+/* Préférence système pour animations réduites */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -3,12 +3,14 @@
 import { motion } from 'framer-motion'
 import { ChevronRight, Terminal } from 'lucide-react'
 import { useTranslation } from '@/contexts/LanguageContext'
+import { useReducedMotion } from '@/lib/useReducedMotion'
 
 const partners = ["Stripe", "Vercel", "AWS", "GitHub", "Linear", "Figma", "OpenAI", "Supabase"]
 
 export default function DatafuseStudioHero() {
   const { t } = useTranslation()
-  
+  const { isMobile } = useReducedMotion()
+
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#020203] px-4">
       
@@ -26,6 +28,7 @@ export default function DatafuseStudioHero() {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: isMobile ? 0.3 : 0.6 }}
           className="group flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl mb-6 md:mb-8 hover:border-blue-500/50 transition-colors cursor-default"
         >
           <div className="size-1.5 md:size-2 rounded-full bg-blue-500 animate-pulse" />
@@ -38,9 +41,12 @@ export default function DatafuseStudioHero() {
         {/* Headline - Ajustement tailles de texte */}
         <div className="text-center mb-8 md:mb-12 relative w-full">
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: isMobile ? 0.3 : 0.8,
+              ease: isMobile ? "easeOut" : [0.16, 1, 0.3, 1]
+            }}
             className="text-6xl sm:text-6xl md:text-8xl lg:text-[120px] font-bold tracking-tighter text-white leading-[0.9] md:leading-[0.85] pointer-events-none"
           >
             {t.hero.title} <br className="hidden sm:block" />
@@ -65,9 +71,12 @@ export default function DatafuseStudioHero() {
 
         {/* Description - Max-width et taille de police */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: isMobile ? 5 : 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{
+            duration: isMobile ? 0.3 : 0.8,
+            delay: isMobile ? 0.1 : 0.2
+          }}
           className="text-center text-gray-500 max-w-[90%] md:max-w-[600px] text-base md:text-xl font-light mb-6 md:mb-8 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: t.hero.description }}
         />
@@ -76,9 +85,12 @@ export default function DatafuseStudioHero() {
 
         {/* CTAs - Full width sur mobile */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: isMobile ? 5 : 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{
+            duration: isMobile ? 0.3 : 0.8,
+            delay: isMobile ? 0.15 : 0.3
+          }}
           className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center mb-6 md:mb-8 w-full sm:w-auto"
         >
           <button className="w-full sm:w-auto h-12 md:h-14 px-8 md:px-10 rounded-full bg-blue-600 text-white text-sm md:text-base font-bold hover:bg-blue-500 hover:scale-105 active:scale-95 transition-all shadow-[0_0_30px_rgba(37,99,235,0.3)] flex items-center justify-center gap-2">
@@ -109,7 +121,11 @@ export default function DatafuseStudioHero() {
           <div className="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
             <motion.div
               animate={{ x: ["0%", "-50%"] }}
-              transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+              transition={{
+                duration: isMobile ? 15 : 25,
+                repeat: Infinity,
+                ease: "linear"
+              }}
               className="flex gap-10 md:gap-16 items-center whitespace-nowrap"
             >
               {[...partners, ...partners].map((partner, i) => (

@@ -1,24 +1,53 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
+import dynamic from 'next/dynamic'
+
+// Composants critiques chargés immédiatement
 import PremiumNavbar from '@/components/premium/PremiumNavbar'
 import PremiumHero from '@/components/premium/PremiumHero'
-import PremiumStats from '@/components/premium/PremiumStats'
-import PremiumFeatures from '@/components/premium/PremiumFeatures'
-import PremiumBentoGrid from '@/components/premium/PremiumBentoGrid'
-import PremiumTimeline from '@/components/premium/PremiumTimeline'
-import PremiumTeam from '@/components/premium/PremiumTeam'
-import PremiumLogoCloud from '@/components/premium/PremiumLogoCloud'
-import PremiumTestimonials from '@/components/premium/PremiumTestimonials'
-import PremiumGuarantees from '@/components/premium/PremiumGuarantees'
-import PremiumPricing from '@/components/premium/PremiumPricing'
-import PremiumFAQ from '@/components/premium/PremiumFAQ'
 import PremiumChatbot from '@/components/premium/PremiumChatbot'
-import PremiumAppointmentBooking from '@/components/premium/PremiumAppointmentBooking'
-import PremiumMultiStepForm from '@/components/premium/PremiumMultiStepForm'
-import PremiumMap from '@/components/premium/PremiumMap'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
+
+// Lazy loading des composants non critiques pour améliorer les performances mobile
+const PremiumStats = dynamic(() => import('@/components/premium/PremiumStats'), {
+  loading: () => <div className="h-32" />,
+})
+const PremiumFeatures = dynamic(() => import('@/components/premium/PremiumFeatures'), {
+  loading: () => <div className="h-96" />,
+})
+const PremiumBentoGrid = dynamic(() => import('@/components/premium/PremiumBentoGrid'), {
+  loading: () => <div className="h-96" />,
+})
+const PremiumTimeline = dynamic(() => import('@/components/premium/PremiumTimeline'), {
+  loading: () => <div className="h-96" />,
+})
+const PremiumTeam = dynamic(() => import('@/components/premium/PremiumTeam'), {
+  loading: () => <div className="h-96" />,
+})
+const PremiumTestimonials = dynamic(() => import('@/components/premium/PremiumTestimonials'), {
+  loading: () => <div className="h-96" />,
+})
+const PremiumGuarantees = dynamic(() => import('@/components/premium/PremiumGuarantees'), {
+  loading: () => <div className="h-96" />,
+})
+const PremiumPricing = dynamic(() => import('@/components/premium/PremiumPricing'), {
+  loading: () => <div className="h-96" />,
+})
+const PremiumFAQ = dynamic(() => import('@/components/premium/PremiumFAQ'), {
+  loading: () => <div className="h-64" />,
+})
+const PremiumAppointmentBooking = dynamic(() => import('@/components/premium/PremiumAppointmentBooking'), {
+  loading: () => <div className="h-96" />,
+})
+const Contact = dynamic(() => import('@/components/Contact'), {
+  loading: () => <div className="h-96" />,
+})
+const Footer = dynamic(() => import('@/components/Footer'), {
+  loading: () => <div className="h-64" />,
+})
+const PremiumMultiStepForm = dynamic(() => import('@/components/premium/PremiumMultiStepForm'), {
+  ssr: false,
+})
 
 export default function Home() {
   const [isFormOpen, setIsFormOpen] = useState(false)
