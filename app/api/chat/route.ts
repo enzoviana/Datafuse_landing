@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-})
+// Initialiser OpenAI seulement si la clé est disponible
+const openai = process.env.OPENAI_API_KEY
+  ? new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    })
+  : null
 
 // Prompt système qui guide l'IA pour convertir les visiteurs
 const SYSTEM_PROMPT = `Tu es l'assistant virtuel de DataFuse, une agence spécialisée dans le développement web et mobile premium. Ton rôle est d'aider les visiteurs à découvrir nos services et de les encourager à prendre rendez-vous.
@@ -66,10 +69,13 @@ export async function POST(request: NextRequest) {
   try {
     const { messages, leadData } = await request.json()
 
-    if (!process.env.OPENAI_API_KEY) {
+    if (!openai || !process.env.OPENAI_API_KEY) {
       return NextResponse.json(
-        { error: 'OpenAI API key not configured' },
-        { status: 500 }
+        {
+          message: "Désolé, le chatbot IA n'est pas encore configuré. Veuillez nous contacter directement à contact@datafuse.fr ou utiliser le formulaire de contact.",
+          shouldSaveLead: false,
+          extractedEmail: null,
+        }
       )
     }
 
