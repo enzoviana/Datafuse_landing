@@ -58,25 +58,137 @@
         "title": "Media_Link_SAAS",
         "badge": "SaaS / Multi-Tenant",
         "desc": "Ecossistema completo de gestão de filas de espera. SuperAdmin, gestão de pontos de venda, ecrãs de exibição e quiosques personalizáveis via CMS dedicado.",
-        "tags": ["SaaS", "CMS", "Web App", "Kiosk System"]
+        "tags": ["SaaS", "CMS", "Web App", "Kiosk System"],
+        "shortDescription": "Ecossistema completo de gestão de filas multi-tenant",
+        "fullDescription": "Solução SaaS multi-tenant completa para gestão de filas de espera. Sistema incluindo SuperAdmin para gestão global, interfaces para múltiplos pontos de venda, ecrãs de exibição personalizáveis em tempo real, e quiosques com CMS dedicado. Arquitetura escalável suportando 10k+ filas simultâneas com sincronização em tempo real.",
+        "challenges": [
+          "Arquitetura multi-tenant com isolamento completo de dados por cliente",
+          "Sincronização em tempo real entre ecrãs, quiosques e dashboards",
+          "CMS headless para personalização total das interfaces",
+          "Gestão de 10.000+ filas simultâneas",
+          "Performance ótimo em hardware variado (ecrãs, quiosques)"
+        ],
+        "solutions": [
+          "Arquitetura SaaS com isolamento de dados por tenant via row-level security PostgreSQL",
+          "WebSocket e Server-Sent Events para sincronização em tempo real sub-segundo",
+          "CMS custom com interface drag & drop e preview ao vivo",
+          "Cache Redis multi-nível para performance ótimo",
+          "CDN para distribuição de assets aos pontos de venda"
+        ],
+        "results": [
+          "12.000+ utilizadores ativos diários",
+          "47 pontos de venda equipados em 6 meses",
+          "99.9% de disponibilidade medida",
+          "Tempo de espera médio reduzido em 62%",
+          "Satisfação do cliente: 4.8/5 (2300 avaliações)"
+        ],
+        "testimonial": {
+          "text": "A DataFuse transformou o nosso conceito numa solução SaaS robusta e escalável. A plataforma suporta agora milhares de utilizadores simultâneos sem qualquer problema de performance. O ROI foi atingido em 4 meses.",
+          "author": "Jean Dupont",
+          "role": "CEO & Founder, Media Link"
+        }
       },
       "dimotec": {
         "title": "Dimotec Platform",
         "badge": "App de Negócio / LegalTech",
         "desc": "Plataforma de ligação para técnicos de diagnóstico imobiliário. Gestão de orçamentos, assinatura eletrónica integrada e acompanhamento de ordens de missão.",
-        "tags": ["Workflow", "E-Signature", "CRM", "Node.js"]
+        "tags": ["Workflow", "E-Signature", "CRM", "Node.js"],
+        "shortDescription": "Plataforma de ligação para técnicos de diagnóstico imobiliário",
+        "fullDescription": "Plataforma profissional LegalTech para ligação entre técnicos de diagnóstico imobiliário e clientes. Sistema completo com gestão automatizada de orçamentos, assinatura eletrónica integrada via DocuSign, acompanhamento automatizado de ordens de missão, e matching inteligente entre técnicos e missões segundo competências e disponibilidades.",
+        "challenges": [
+          "Workflow complexo com validação multi-etapas e assinaturas legais",
+          "Integração DocuSign para assinaturas eletrónicas conformes",
+          "Sistema de matching inteligente entre missões e técnicos",
+          "Gestão de documentos sensíveis com rastreabilidade completa",
+          "Interface intuitiva para utilizadores não-técnicos"
+        ],
+        "solutions": [
+          "Workflow automatizado com state machine para gestão de estados",
+          "Integração completa API DocuSign para assinaturas legalmente válidas",
+          "Algoritmo de matching baseado em competências, localização e disponibilidades",
+          "Armazenamento seguro AWS S3 com encriptação e versionamento",
+          "Interface wizard multi-etapas com validação progressiva"
+        ],
+        "results": [
+          "3.200+ missões tratadas em 12 meses",
+          "Tempo de processamento reduzido em 75%",
+          "127 técnicos ativos na plataforma",
+          "Taxa de satisfação: 4.8/5",
+          "Conformidade 100% às normas legais"
+        ],
+        "testimonial": {
+          "text": "A plataforma desenvolvida pela DataFuse revolucionou o nosso processo de negócio. O que demorava 3 dias agora demora algumas horas. A integração DocuSign é perfeita e os nossos clientes adoram a simplicidade.",
+          "author": "Marie Lambert",
+          "role": "Diretora Geral, Dimotec"
+        }
       },
       "rioave": {
         "title": "Rio Ave FC Oficial",
         "badge": "App Móvel / Desporto",
         "desc": "Aplicação móvel oficial do Rio Ave FC. Estatísticas em tempo real, acompanhamento de jogos e envolvimento dos adeptos (iOS & Android).",
-        "tags": ["React Native", "Real-time Data", "Rest API", "Mobile"]
+        "tags": ["React Native", "Real-time Data", "Rest API", "Mobile"],
+        "shortDescription": "Aplicação móvel oficial do clube de futebol Rio Ave FC",
+        "fullDescription": "Aplicação móvel nativa iOS e Android para o clube de futebol Rio Ave FC. Funcionalidades incluindo estatísticas dos jogadores em tempo real, acompanhamento de jogos com timeline ao vivo, notificações push para eventos importantes, galeria de fotos/vídeos, calendário completo, e sistema de gamificação para envolvimento dos adeptos.",
+        "challenges": [
+          "Integração API desporto para estatísticas em tempo real",
+          "Performance ótimo em dispositivos baixa/média gama",
+          "Notificações push relevantes sem spam",
+          "Envolvimento contínuo dos adeptos fora de época",
+          "App multilingue (PT, EN, ES)"
+        ],
+        "solutions": [
+          "Integração API FootballAPI para stats ao vivo com fallback",
+          "Otimização React Native com memo, lazy loading e code splitting",
+          "Sistema de notificações inteligente baseado em preferências do utilizador",
+          "Gamificação com pontos, badges e classificações de adeptos",
+          "i18n com react-native-localize para traduções automáticas"
+        ],
+        "results": [
+          "23.000+ downloads em 4 meses",
+          "67% de envolvimento diário (vs 12% antes)",
+          "Nota App Store & Play Store: 4.7/5",
+          "Tempo médio de sessão: 8.2 minutos",
+          "85% de retenção aos 30 dias"
+        ],
+        "testimonial": {
+          "text": "A aplicação superou todas as nossas expectativas. Os nossos adeptos estão agora ligados ao clube 24/7. O envolvimento explodiu e vemos um impacto real na bilheteira e merchandising.",
+          "author": "Pedro Silva",
+          "role": "Diretor de Marketing, Rio Ave FC"
+        }
       },
       "natureletjoli": {
         "title": "Naturel & Joli",
         "badge": "Web / Ferramenta de Negócio",
         "desc": "Plataforma de e-business para institutos de estética. Marcações online, gestão de agenda complexa, acompanhamento de clientes e otimização SEO local.",
-        "tags": ["Booking System", "SEO", "UX Design", "Next.js"]
+        "tags": ["Booking System", "SEO", "UX Design", "Next.js"],
+        "shortDescription": "Plataforma e-business para instituto de estética com marcações online",
+        "fullDescription": "Website e plataforma e-business completa para instituto de estética. Sistema de marcação de consultas online com gestão de agenda multi-funcionários e multi-serviços, pagamento online seguro Stripe, CRM para acompanhamento de clientes, email & SMS automáticos, e otimização SEO local para visibilidade Google My Business.",
+        "challenges": [
+          "Sistema de marcações complexo com disponibilidades multi-funcionários",
+          "SEO local ultra-competitivo (estética Paris)",
+          "Interface elegante refletindo o posicionamento premium",
+          "Redução de no-shows e otimização do planeamento",
+          "Pagamentos online para depósitos e pacotes"
+        ],
+        "solutions": [
+          "Sistema de marcações custom com gestão inteligente de horários",
+          "SEO técnico avançado com schema.org LocalBusiness e rich snippets",
+          "Design sob medida com animações subtis e fotos profissionais",
+          "Email & SMS automáticos de lembrete + opção de pré-pagamento",
+          "Integração Stripe para pagamentos seguros e subscrições"
+        ],
+        "results": [
+          "Marcações online: +312% em 3 meses",
+          "Tráfego orgânico: +280% (posição média Google: Top 3)",
+          "Score Lighthouse: 98/100",
+          "No-shows reduzidos em 65%",
+          "Taxa de conversão de marcações: 42%"
+        ],
+        "testimonial": {
+          "text": "O nosso site tornou-se o nosso melhor comercial. As clientes marcam a qualquer hora e reduzimos drasticamente o tempo ao telefone. O ROI foi imediato.",
+          "author": "Sophie Beaumont",
+          "role": "Gerente, Naturel & Joli"
+        }
       }
     }
   },

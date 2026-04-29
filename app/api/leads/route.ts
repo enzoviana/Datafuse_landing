@@ -1,45 +1,79 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '../auth/[...nextauth]/route'
+import prisma from '@/lib/prisma'
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://datafuseweb-95a5588f8542.herokuapp.com'
-
-export async function POST(request: NextRequest) {
+// GET - Liste tous les prospects
+export async function GET(request: NextRequest) {
   try {
-    const body = await request.json()
-
-    // Validation anti-spam simple
-    if (body.honeypot) {
-      // Si le champ honeypot est rempli, c'est probablement un bot
-      return NextResponse.json(
-        { error: 'Invalid request' },
-        { status: 400 }
-      )
+    const session = await getServerSession(authOptions)
+    if (!session?.user) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    // Envoyer au backend
-    const response = await fetch(`${BACKEND_URL}/api/leads`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body),
+    const { searchParams } = new URL(request.url)
+    const status = searchParams.get('status')
+    const limit = parseInt(searchParams.get('limit') || '50')
+    const skip = parseInt(searchParams.get('skip') || '0')
+
+    const where: any = {}
+    if (status && status !== 'all') where.status = status
+
+    const leads = await prisma.formSubmission.findMany({
+      where,
+      orderBy: { createdAt: 'desc' },
+      take: limit,
+      skip
     })
 
-    if (!response.ok) {
-      const error = await response.json()
-      return NextResponse.json(
-        { error: error.message || 'Erreur lors de la création du lead' },
-        { status: response.status }
-      )
+    const total = await prisma.formSubmission.count({ where })
+
+    // Stats par status
+    const statsByStatus = await prisma.formSubmission.groupBy({
+      by: ['status'],
+      _count: {
+        status: true
+      }
+    })
+
+    return NextResponse.json({
+      leads,
+      total,
+      stats: statsByStatus.map(s => ({
+        status: s.status,
+        count: s._count.status
+      })),
+      hasMore: total > skip + limit
+    })
+  } catch (error) {
+    console.error('Error fetching leads:', error)
+    return NextResponse.json({ error: 'Failed to fetch leads' }, { status: 500 })
+  }
+}
+
+// PUT - Mettre à jour le status d'un lead
+export async function PUT(request: NextRequest) {
+  try {
+    const session = await getServerSession(authOptions)
+    if (!session?.user) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const data = await response.json()
-    return NextResponse.json(data, { status: 201 })
+    const body = await request.json()
+    const { id, status } = body
 
+    if (!id || !status) {
+      return NextResponse.json({ error: 'Missing id or status' }, { status: 400 })
+    }
+
+    const lead = await prisma.formSubmission.update({
+      where: { id },
+      data: { status }
+    })
+
+    return NextResponse.json(lead)
   } catch (error) {
-    console.error('Error creating lead:', error)
-    return NextResponse.json(
-      { error: 'Erreur serveur' },
-      { status: 500 }
-    )
+    console.error('Error updating lead:', error)
+    return NextResponse.json({ error: 'Failed to update lead' }, { status: 500 })
   }
 }

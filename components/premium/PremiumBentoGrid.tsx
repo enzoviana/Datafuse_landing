@@ -6,14 +6,15 @@ import { ExternalLink, Smartphone, Globe, Layout, Zap, Code2, ArrowUpRight, Arro
 import { useTranslation } from '@/contexts/LanguageContext'
 import Link from 'next/link'
 
-const ProjectCard = ({ className, title, description, badge, tags, image, icon: Icon }: { 
-  className?: string; 
+const ProjectCard = ({ className, title, description, badge, tags, image, icon: Icon, slug }: {
+  className?: string;
   title: string;
   description: string;
   badge?: string;
   tags: string[];
   image?: string;
   icon: any;
+  slug: string;
 }) => {
   const itemRef = useRef<HTMLDivElement>(null)
 
@@ -34,10 +35,11 @@ const ProjectCard = ({ className, title, description, badge, tags, image, icon: 
   }, [])
 
   return (
-    <div
-      ref={itemRef}
-      className={`group relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-[#080808] p-8 transition-all hover:border-blue-500/30 ${className}`}
-    >
+    <Link href={`/projets/${slug}`}>
+      <div
+        ref={itemRef}
+        className={`group relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-[#080808] p-8 transition-all hover:border-blue-500/30 cursor-pointer ${className}`}
+      >
       {/* Spotlight Effect */}
       <div 
         className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
@@ -94,6 +96,7 @@ const ProjectCard = ({ className, title, description, badge, tags, image, icon: 
         </div>
       </div>
     </div>
+    </Link>
   )
 }
 
@@ -158,6 +161,7 @@ export default function PremiumBentoPortfolio() {
     description={t.portfolio.projects.medialink.desc}
     badge={t.portfolio.projects.medialink.badge}
     tags={t.portfolio.projects.medialink.tags}
+    slug="medialink"
   />
 
   {/* Rio Ave FC - Mobile */}
@@ -167,6 +171,7 @@ export default function PremiumBentoPortfolio() {
     description={t.portfolio.projects.rioave.desc}
     badge={t.portfolio.projects.rioave.badge}
     tags={t.portfolio.projects.rioave.tags}
+    slug="rioave"
   />
 
   {/* Dimotec - App Métier */}
@@ -176,6 +181,7 @@ export default function PremiumBentoPortfolio() {
     description={t.portfolio.projects.dimotec.desc}
     badge={t.portfolio.projects.dimotec.badge}
     tags={t.portfolio.projects.dimotec.tags}
+    slug="dimotec"
   />
 
   {/* Naturel & Joli - Site Vitrine & Booking */}
@@ -186,6 +192,7 @@ export default function PremiumBentoPortfolio() {
     description={t.portfolio.projects.natureletjoli.desc}
     badge={t.portfolio.projects.natureletjoli.badge}
     tags={t.portfolio.projects.natureletjoli.tags}
+    slug="natureletjoli"
   />
 </div>
 

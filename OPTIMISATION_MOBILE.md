@@ -71,7 +71,7 @@ html {
 **Impact** :
 - 🎯 Scroll 3x plus fluide
 - ⚡ Pas de "jank" lors du scroll
-- 💪 Meilleure utilisation du GPU
+- LOGO__Datafuse_Blue.svg Meilleure utilisation du GPU
 
 ### 4. **Next.js Configuration Optimisée** ⚙️
 

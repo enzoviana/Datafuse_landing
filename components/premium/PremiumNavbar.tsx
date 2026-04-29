@@ -26,6 +26,7 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
   const navLinks = [
     { name: t.navbar.expertise, href: '#services' },
     { name: t.navbar.builds, href: '#portfolio' },
+    { name: 'Actualités', href: '/actualites' },
     { name: t.navbar.process, href: '#process' },
   ]
 
@@ -53,10 +54,11 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
           {/* Section Gauche : Logo & Nav Desktop */}
           <div className="flex items-center gap-4 lg:gap-10">
             <a href="#" className="flex items-center gap-2 md:gap-3 group relative shrink-0">
-              <div className="relative size-8 md:size-10 bg-white rounded-lg md:rounded-xl flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover:rotate-[360deg]">
-                <Terminal size={18} className="text-black relative z-10 md:w-5 md:h-5" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
+  <img
+    src="/LOGO__Datafuse_White.svg"
+    alt="Datafuse logo"
+    className="w-auto h-14 object-contain"
+  />
               <div className="flex flex-col leading-none">
                 <span className="text-[11px] md:text-sm font-black tracking-[0.2em] md:tracking-[0.3em] text-white uppercase">
                   Datafuse

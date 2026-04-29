@@ -74,7 +74,7 @@ Votre site est maintenant :
 - ⚡ **3x plus rapide**
 - 📱 **Fluide** 60 FPS
 - 🎯 **Score Google** 85-95
-- 💪 **Production ready**
+- LOGO__Datafuse_Blue.svg **Production ready**
 
 ---
 

@@ -195,7 +195,7 @@ Votre site est maintenant :
 - ⚡ **Ultra rapide** sur mobile
 - 📱 **Fluide** comme une app native
 - 🎯 **Optimisé** pour Google (SEO++)
-- 💪 **Prêt** pour des milliers d'utilisateurs
+- LOGO__Datafuse_Blue.svg **Prêt** pour des milliers d'utilisateurs
 
 **Profitez-en et bon lancement ! 🚀**
 

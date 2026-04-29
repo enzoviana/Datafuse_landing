@@ -31,29 +31,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         
         {/* Left: Brand */}
-        <div className="flex items-center gap-8">
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="size-9 bg-white text-black rounded-full flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
-              <Terminal size={18} />
-            </div>
-            <span className="text-sm font-bold tracking-[0.2em] text-white uppercase">
-              Datafuse<span className="text-blue-500">.fr</span>
-            </span>
-          </a>
-
-          {/* Desktop Nav - Intégrée à gauche pour un look pro */}
-          <nav className="hidden md:flex items-center gap-1 border-l border-white/10 ml-4 pl-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="px-4 py-2 text-[11px] font-mono tracking-widest uppercase text-gray-500 hover:text-white transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
-          </nav>
-        </div>
+<div className="size-9 bg-white text-black rounded-full flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+  <img
+    src="/logo.svg"
+    alt="Datafuse logo"
+    className="w-5 h-5 object-contain"
+  />
+</div>
 
         {/* Right: CTAs */}
         <div className="flex items-center gap-6">

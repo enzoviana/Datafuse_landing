@@ -293,7 +293,7 @@ Votre site est maintenant :
 - ⚡ **3x plus rapide** sur mobile
 - 📱 **Fluide** à 60 FPS
 - 🎯 **Score Lighthouse** 85-95
-- 💪 **Production-ready** pour des milliers d'utilisateurs
+- LOGO__Datafuse_Blue.svg **Production-ready** pour des milliers d'utilisateurs
 
 ---
 

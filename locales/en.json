@@ -58,25 +58,137 @@
         "title": "Media_Link_SAAS",
         "badge": "SaaS / Multi-Tenant",
         "desc": "Complete queue management ecosystem. SuperAdmin, point-of-sale management, display screens, and Kiosk terminals customizable via a dedicated CMS.",
-        "tags": ["SaaS", "CMS", "Web App", "Kiosk System"]
+        "tags": ["SaaS", "CMS", "Web App", "Kiosk System"],
+        "shortDescription": "Complete multi-tenant queue management ecosystem",
+        "fullDescription": "Complete multi-tenant SaaS solution for queue management. System including a SuperAdmin for global management, interfaces for multiple points of sale, real-time customizable display screens, and Kiosk terminals with dedicated CMS. Scalable architecture supporting 10k+ simultaneous queues with real-time synchronization.",
+        "challenges": [
+          "Multi-tenant architecture with complete data isolation per client",
+          "Real-time synchronization between display screens, kiosks and dashboards",
+          "Headless CMS for total interface customization",
+          "Managing 10,000+ simultaneous queues",
+          "Optimal performance on varied hardware (screens, kiosks)"
+        ],
+        "solutions": [
+          "SaaS architecture with tenant data isolation via PostgreSQL row-level security",
+          "WebSocket and Server-Sent Events for sub-second real-time synchronization",
+          "Custom CMS with drag & drop interface and live preview",
+          "Multi-level Redis cache for optimal performance",
+          "CDN for asset distribution to points of sale"
+        ],
+        "results": [
+          "12,000+ daily active users",
+          "47 equipped points of sale in 6 months",
+          "99.9% measured availability",
+          "Average waiting time reduced by 62%",
+          "Customer satisfaction: 4.8/5 (2300 reviews)"
+        ],
+        "testimonial": {
+          "text": "DataFuse transformed our concept into a robust and scalable SaaS solution. The platform now supports thousands of simultaneous users without any performance issues. ROI was achieved in 4 months.",
+          "author": "Jean Dupont",
+          "role": "CEO & Founder, Media Link"
+        }
       },
       "dimotec": {
         "title": "Dimotec Platform",
         "badge": "Business App / LegalTech",
         "desc": "Connecting platform for real estate diagnosticians. Quote management, integrated electronic signature, and automated mission order tracking.",
-        "tags": ["Workflow", "E-Signature", "CRM", "Node.js"]
+        "tags": ["Workflow", "E-Signature", "CRM", "Node.js"],
+        "shortDescription": "Connection platform for real estate diagnosticians",
+        "fullDescription": "LegalTech business platform for connecting real estate diagnosticians and clients. Complete system with automated quote management, electronic signature integrated via DocuSign, automated mission order tracking, and intelligent matching between diagnosticians and missions based on skills and availability.",
+        "challenges": [
+          "Complex workflow with multi-step validation and legal signatures",
+          "DocuSign integration for compliant electronic signatures",
+          "Intelligent matching system between missions and diagnosticians",
+          "Managing sensitive documents with complete traceability",
+          "Intuitive interface for non-technical users"
+        ],
+        "solutions": [
+          "Automated workflow with state machine for state management",
+          "Complete DocuSign API integration for legally valid signatures",
+          "Matching algorithm based on skills, location and availability",
+          "AWS S3 secure storage with encryption and versioning",
+          "Multi-step wizard interface with progressive validation"
+        ],
+        "results": [
+          "3,200+ missions processed in 12 months",
+          "Processing time reduced by 75%",
+          "127 active diagnosticians on the platform",
+          "Satisfaction rate: 4.8/5",
+          "100% compliance with legal standards"
+        ],
+        "testimonial": {
+          "text": "The platform developed by DataFuse revolutionized our business process. What took 3 days now takes a few hours. The DocuSign integration is perfect and our clients love the simplicity.",
+          "author": "Marie Lambert",
+          "role": "Managing Director, Dimotec"
+        }
       },
       "rioave": {
         "title": "Rio Ave FC Official",
         "badge": "Mobile App / Sport",
         "desc": "Official mobile application for Rio Ave football club. Real-time statistics, match tracking, and fan engagement (iOS & Android).",
-        "tags": ["React Native", "Real-time Data", "Rest API", "Mobile"]
+        "tags": ["React Native", "Real-time Data", "Rest API", "Mobile"],
+        "shortDescription": "Official mobile app for Rio Ave FC football club",
+        "fullDescription": "Native iOS and Android mobile application for Rio Ave FC football club. Features including real-time player statistics, match tracking with live timeline, push notifications for important events, photo/video gallery, complete calendar, and gamification system for supporter engagement.",
+        "challenges": [
+          "Sports API integration for real-time statistics",
+          "Optimal performance on low/mid-range devices",
+          "Relevant push notifications without spam",
+          "Continuous supporter engagement off-season",
+          "Multilingual app (PT, EN, ES)"
+        ],
+        "solutions": [
+          "FootballAPI integration for live stats with fallback",
+          "React Native optimization with memo, lazy loading and code splitting",
+          "Intelligent notification system based on user preferences",
+          "Gamification with points, badges and supporter rankings",
+          "i18n with react-native-localize for automatic translations"
+        ],
+        "results": [
+          "23,000+ downloads in 4 months",
+          "67% daily engagement (vs 12% before)",
+          "App Store & Play Store rating: 4.7/5",
+          "Average session time: 8.2 minutes",
+          "85% retention at 30 days"
+        ],
+        "testimonial": {
+          "text": "The app exceeded all our expectations. Our supporters are now connected to the club 24/7. Engagement has exploded and we see a real impact on ticketing and merchandising.",
+          "author": "Pedro Silva",
+          "role": "Marketing Director, Rio Ave FC"
+        }
       },
       "natureletjoli": {
         "title": "Naturel & Joli",
         "badge": "Web / Business Tool",
         "desc": "E-business platform for beauty institutes. Online booking, complex calendar management, customer tracking, and local SEO optimization.",
-        "tags": ["Booking System", "SEO", "UX Design", "Next.js"]
+        "tags": ["Booking System", "SEO", "UX Design", "Next.js"],
+        "shortDescription": "E-business platform for beauty institute with online booking",
+        "fullDescription": "Complete website and e-business platform for beauty institute. Online appointment booking system with multi-employee and multi-service calendar management, Stripe secure online payment, CRM for client tracking, automated email & SMS, and local SEO optimization for Google My Business visibility.",
+        "challenges": [
+          "Complex booking system with multi-employee availability",
+          "Ultra-competitive local SEO (beauty Paris)",
+          "Elegant interface reflecting premium positioning",
+          "Reducing no-shows and optimizing planning",
+          "Online payments for deposits and packages"
+        ],
+        "solutions": [
+          "Custom booking system with intelligent slot management",
+          "Advanced technical SEO with schema.org LocalBusiness and rich snippets",
+          "Custom design with subtle animations and professional photos",
+          "Automated email & SMS reminders + pre-payment option",
+          "Stripe integration for secure payments and subscriptions"
+        ],
+        "results": [
+          "Online bookings: +312% in 3 months",
+          "Organic traffic: +280% (average Google position: Top 3)",
+          "Lighthouse score: 98/100",
+          "No-shows reduced by 65%",
+          "Booking conversion rate: 42%"
+        ],
+        "testimonial": {
+          "text": "Our website has become our best salesperson. Clients book at all hours and we've drastically reduced time spent on the phone. ROI was immediate.",
+          "author": "Sophie Beaumont",
+          "role": "Manager, Naturel & Joli"
+        }
       }
     }
   },
