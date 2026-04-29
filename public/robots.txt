@@ -1,4 +1,20 @@
+# DataFuse Studio - Robots.txt
+
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/*
 
-Sitemap: https://datafuse.studio/sitemap.xml
+# Sitemaps
+Sitemap: https://datafuse.fr/sitemap.xml
+
+# Crawl-delay (optionnel, pour eviter surcharge serveur)
+Crawl-delay: 1
+
+# Regles specifiques pour GPTBot (ChatGPT crawler)
+User-agent: GPTBot
+Allow: /actualites/
+Allow: /projets/
+Disallow: /admin/
