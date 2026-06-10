@@ -4,14 +4,36 @@ import { ArrowLeft, ArrowRight, Check, Clock, Shield, Rocket, Zap } from "lucide
 import { Nav } from "@/components/site-nav";
 import { Footer } from "@/components/site-footer";
 import { LazyChatbot } from "@/components/chatbot-lazy";
+import { OFFER_SEO } from "@/lib/seo-content";
+import { SeoArticle } from "@/components/seo-article";
+import { useI18n } from "@/lib/i18n";
+
+const OFFER_URL = "https://datafuse-mvp-spark.lovable.app/offer/mvp";
 
 export const Route = createFileRoute("/offer/mvp")({
   head: () => ({
     meta: [
-      { title: "The 15-Day MVP — $15,000 Fixed Price · DATAFUSE Studio" },
-      { name: "description", content: "Take your idea from blank canvas to a production-ready product in 15 days. Fixed scope, fixed price, full source code ownership." },
-      { property: "og:title", content: "The 15-Day MVP — $15,000 · DATAFUSE Studio" },
+      { title: "15-Day MVP — $15,000 Fixed Price · DATAFUSE" },
+      { name: "description", content: "Take your idea from blank canvas to a production-ready product in 15 days. Fixed scope, fixed price, full source-code ownership." },
+      { property: "og:title", content: "The 15-Day MVP — $15,000 · DATAFUSE" },
       { property: "og:description", content: "A production-ready MVP shipped in 15 days. Fixed price, fixed scope." },
+      { property: "og:type", content: "product" },
+      { property: "og:url", content: OFFER_URL },
+    ],
+    links: [{ rel: "canonical", href: OFFER_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "15-Day MVP",
+          provider: { "@type": "Organization", name: "DATAFUSE Studio" },
+          description: "Fixed-scope, fixed-price sprint that ships a production MVP in 15 days.",
+          url: OFFER_URL,
+          offers: { "@type": "Offer", price: "15000", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+        }),
+      },
     ],
   }),
   component: OfferPage,
@@ -36,6 +58,7 @@ const phases = [
 ];
 
 function OfferPage() {
+  const { lang } = useI18n();
   return (
     <main className="relative min-h-screen">
       <Nav />
@@ -121,6 +144,8 @@ function OfferPage() {
           </div>
         </div>
       </section>
+
+      <SeoArticle {...OFFER_SEO[lang]} />
 
       <section className="py-24 bg-surface/60">
         <div className="mx-auto max-w-3xl px-6 text-center">

@@ -6,6 +6,8 @@ import { useI18n } from "@/lib/i18n";
 import { Nav } from "@/components/site-nav";
 import { Footer } from "@/components/site-footer";
 import { LazyChatbot } from "@/components/chatbot-lazy";
+import { SeoArticle } from "@/components/seo-article";
+import { HOME_SEO } from "@/lib/seo-content";
 import { track } from "@/lib/analytics";
 import founderImg from "@/assets/founder-enzo.jpg";
 
@@ -14,7 +16,7 @@ const SITE_URL = "https://datafuse-mvp-spark.lovable.app";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DATAFUSE Studio — Web & Mobile Software Agency · MVP in 15 Days" },
+      { title: "DATAFUSE Studio — Web & Mobile MVP Agency" },
       { name: "description", content: "DATAFUSE Studio is a senior software agency designing and shipping refined web apps, mobile apps and AI products. Production-ready MVP in 15 days from $15,000." },
       { name: "keywords", content: "software agency, web app development, mobile app development, MVP development, SaaS, React, TypeScript, AI integration, product design, DATAFUSE, Enzo Viana" },
       { name: "author", content: "DATAFUSE Studio" },
@@ -42,12 +44,30 @@ export const Route = createFileRoute("/")({
           name: "DATAFUSE Studio",
           description: "Senior software agency designing and shipping refined web apps, mobile apps and AI products. MVP in 15 days from $15,000.",
           url: SITE_URL,
-          email: "contact@datafuse.fr",
+          email: "enzo_viana@datafuse.fr",
           founder: { "@type": "Person", name: "Enzo Viana" },
           areaServed: "Worldwide",
           priceRange: "$$$",
           serviceType: ["Web Application Development", "Mobile App Development", "Product Design", "AI Integration"],
-          sameAs: ["https://www.linkedin.com/"],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { q: "What if my project can't fit in 15 days?", a: "Most products can — the trick is shipping the smallest version worth using. If yours genuinely can't, we'll tell you on the discovery call and propose an honest scope." },
+            { q: "Do I really own the code?", a: "Yes. 100%. The repository is yours from day one. No proprietary lock-in, no licensing fees, no hidden dependencies." },
+            { q: "What tech stack do you use?", a: "Modern, boring, scalable. TypeScript, React / React Native, Postgres, and the right cloud for the job." },
+            { q: "What happens after the 15 days?", a: "You get 30 days of post-launch support included. After that, we can continue as a retainer, hand off to your team, or stay on call." },
+            { q: "How do payments work?", a: "50% to kick off, 50% on delivery. One invoice, one transparent price. No timesheets, no surprises." },
+            { q: "Do you sign an NDA?", a: "Absolutely. We're happy to sign yours, or provide ours. Your idea stays your idea." },
+          ].map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
         }),
       },
     ],
@@ -587,7 +607,7 @@ function LeadCapture() {
       ``,
       form.project,
     ].join("\n");
-    window.location.href = `mailto:contact@datafuse.fr?subject=${encodeURIComponent("New project inquiry — " + form.name)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:enzo_viana@datafuse.fr?subject=${encodeURIComponent("New project inquiry — " + form.name)}&body=${encodeURIComponent(body)}`;
     setSent(true);
   };
 
@@ -609,9 +629,9 @@ function LeadCapture() {
               </div>
               <div className="pt-6 border-t border-border">
                 <div className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">{t("lead.or")}</div>
-                <a href="mailto:contact@datafuse.fr" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition">
+                <a href="mailto:enzo_viana@datafuse.fr" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition">
                   <Mail className="h-4 w-4" />
-                  <span>contact@datafuse.fr</span>
+                  <span>enzo_viana@datafuse.fr</span>
                 </a>
               </div>
             </div>
@@ -708,6 +728,7 @@ function Field({ label, required, children }: { label: string; required?: boolea
 }
 
 function Landing() {
+  const { lang } = useI18n();
   return (
     <main className="relative min-h-screen">
       <Nav />
@@ -719,6 +740,7 @@ function Landing() {
       <Reviews />
       <Offer />
       <Process />
+      <SeoArticle {...HOME_SEO[lang]} />
       <FAQ />
       <LeadCapture />
       <Footer />

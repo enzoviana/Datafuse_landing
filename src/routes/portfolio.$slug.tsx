@@ -5,6 +5,8 @@ import { Nav } from "@/components/site-nav";
 import { Footer } from "@/components/site-footer";
 import { LazyChatbot } from "@/components/chatbot-lazy";
 import { PORTFOLIO_BY_SLUG, PORTFOLIO, localizeProject, type PortfolioProject } from "@/lib/portfolio-content";
+import { PORTFOLIO_SEO } from "@/lib/seo-content";
+import { SeoArticle } from "@/components/seo-article";
 import { useI18n } from "@/lib/i18n";
 import { useEffect } from "react";
 import { track } from "@/lib/analytics";
@@ -172,6 +174,10 @@ function PortfolioDetail() {
           )}
         </div>
       </section>
+
+      {PORTFOLIO_SEO[raw.slug as keyof typeof PORTFOLIO_SEO] && (
+        <SeoArticle {...PORTFOLIO_SEO[raw.slug as keyof typeof PORTFOLIO_SEO][lang]} />
+      )}
 
       <section className="py-24">
         <div className="mx-auto max-w-6xl px-6">

@@ -106,9 +106,9 @@ export const PORTFOLIO: PortfolioProject[] = [
       ],
     },
     metaTitle: {
-      en: "Medialink SAAS — Queue Management & Kiosk CMS · DATAFUSE Studio",
-      fr: "Medialink SAAS — Gestion de file & CMS Kiosk · DATAFUSE Studio",
-      pt: "Medialink SAAS — Gestão de Filas & CMS de Quiosques · DATAFUSE Studio",
+      en: "Medialink SAAS — Queue & Kiosk CMS · DATAFUSE",
+      fr: "Medialink SAAS — File & CMS Kiosk · DATAFUSE",
+      pt: "Medialink SAAS — Filas & CMS Quiosques · DATAFUSE",
     },
     metaDesc: {
       en: "Case study: Medialink SaaS — web platform, mobile companion app and a no-code CMS to customize every self-service kiosk.",
@@ -179,9 +179,9 @@ export const PORTFOLIO: PortfolioProject[] = [
       ],
     },
     metaTitle: {
-      en: "Dimotec Contrôle — Quote, Signature & Mission Orders Platform · DATAFUSE Studio",
-      fr: "Dimotec Contrôle — Plateforme Devis, Signature & Ordres de Mission · DATAFUSE Studio",
-      pt: "Dimotec Contrôle — Plataforma de Orçamentos, Assinatura & Ordens de Missão · DATAFUSE Studio",
+      en: "Dimotec — Quotes & Field Ops Platform · DATAFUSE",
+      fr: "Dimotec — Devis & Ops Terrain · DATAFUSE",
+      pt: "Dimotec — Orçamentos & Ops de Campo · DATAFUSE",
     },
     metaDesc: {
       en: "Case study: an end-to-end field-operations platform — quotes, in-person signature, mission orders and a loyalty wallet.",
@@ -252,9 +252,9 @@ export const PORTFOLIO: PortfolioProject[] = [
       ],
     },
     metaTitle: {
-      en: "Rio Ave FC — Official Football Club Mobile App · DATAFUSE Studio",
-      fr: "Rio Ave FC — App mobile officielle du club · DATAFUSE Studio",
-      pt: "Rio Ave FC — App móvel oficial do clube · DATAFUSE Studio",
+      en: "Rio Ave FC — Official Club Mobile App · DATAFUSE",
+      fr: "Rio Ave FC — App mobile officielle · DATAFUSE",
+      pt: "Rio Ave FC — App móvel oficial · DATAFUSE",
     },
     metaDesc: {
       en: "Case study: the official Rio Ave FC mobile app — live match data, squad, news, ticketing and push.",

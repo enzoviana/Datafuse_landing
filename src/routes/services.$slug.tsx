@@ -5,26 +5,48 @@ import { Nav } from "@/components/site-nav";
 import { Footer } from "@/components/site-footer";
 import { LazyChatbot } from "@/components/chatbot-lazy";
 import { SERVICES, localizeService, type ServiceSlug, type ServiceDetail } from "@/lib/service-content";
+import { SERVICE_SEO } from "@/lib/seo-content";
+import { SeoArticle } from "@/components/seo-article";
 import { useI18n } from "@/lib/i18n";
 import { useEffect } from "react";
 import { track } from "@/lib/analytics";
 
 const SLUGS = ["web", "mobile", "design", "ai"] as const;
 
+const SITE = "https://datafuse-mvp-spark.lovable.app";
+
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
     if (!(SLUGS as readonly string[]).includes(params.slug)) throw notFound();
     return { service: SERVICES[params.slug as ServiceSlug] };
   },
-  head: ({ loaderData }) => {
+  head: ({ loaderData, params }) => {
     if (!loaderData) return {};
     const en = localizeService(loaderData.service, "en");
+    const url = `${SITE}/services/${params.slug}`;
     return {
       meta: [
         { title: en.metaTitle },
         { name: "description", content: en.metaDesc },
         { property: "og:title", content: en.metaTitle },
         { property: "og:description", content: en.metaDesc },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: url },
+      ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: en.title,
+            description: en.metaDesc,
+            provider: { "@type": "Organization", name: "DATAFUSE Studio" },
+            url,
+            offers: { "@type": "Offer", price: String(en.pricingFrom).replace(/[^0-9]/g, "") || undefined, priceCurrency: "USD" },
+          }),
+        },
       ],
     };
   },
@@ -129,6 +151,8 @@ function ServicePage() {
           </div>
         </div>
       </section>
+
+      <SeoArticle {...SERVICE_SEO[raw.slug][lang]} />
 
       <section className="py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">

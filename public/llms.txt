@@ -1,0 +1,27 @@
+# DATAFUSE Studio
+
+> Senior software agency designing and shipping refined web apps, mobile apps and AI products. Production-ready MVP in 15 days from $15,000.
+
+DATAFUSE Studio is led by Enzo Viana. We partner with founders and scale-ups to turn ideas into production software — focused scope, fixed price, full source-code ownership.
+
+## Pages
+
+- [Home](/): Agency overview, services, portfolio, founder, FAQ and contact.
+- [15-day MVP offer](/offer/mvp): Flagship fixed-price $15,000 MVP delivered in 15 days.
+
+## Services
+
+- [Web app development](/services/web): Production-grade web platforms on TypeScript, React and Postgres.
+- [Mobile app development](/services/mobile): Native-feel cross-platform apps with React Native / Expo.
+- [Product design](/services/design): UI/UX design, design systems and brand-driven interfaces.
+- [AI integration](/services/ai): LLM features, RAG, agents and AI-powered product flows.
+
+## Case studies
+
+- [Medialink SAAS](/portfolio/medialink-saas): SaaS, mobile app and no-code CMS for self-service kiosks.
+- [Dimotec Contrôle](/portfolio/dimotec-controle): Field-ops platform — quotes, in-person signature, mission orders and loyalty.
+- [Rio Ave FC](/portfolio/rio-ave-fc): Official mobile app for the Portuguese football club.
+
+## Optional
+
+- [Sitemap](/sitemap.xml): Machine-readable list of indexable URLs.
